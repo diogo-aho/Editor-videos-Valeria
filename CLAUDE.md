@@ -70,10 +70,10 @@ locais de trabalho). Às vezes manda fotos, prints, imagens e vídeos à parte. 
 ## Som
 
 - **Música sempre**, do **Artlist** (assinatura do Diogo; as faixas chegam por uma pasta do Google Drive).
-  Estilo elegante e jovial, um pouco dançante, emocional quando necessário. A música pode
-  **trocar no meio do vídeo** acompanhando a cena. Volume baixo por baixo da voz (~0,12).
-- **Efeitos sutis** nas transições e nas animações. Provisórios gerados por `scripts/gerar_sons.py`
-  (`public/sons/`) até chegarem os do Artlist.
+  Estilo elegante e jovial, emocional quando necessário. A música pode
+  **trocar no meio do vídeo** acompanhando a cena. Volume por baixo da voz (~0,18).
+- **Sem efeitos sonoros** nas palavras e transições (desligados por padrão; `"efeitosAutomaticos": true` religa).
+- Música com **leve batida**, um pouco animada, **sem ser dançante**, sofisticada. Volume ~0,18 por baixo da voz.
 
 ## Visual
 
@@ -129,6 +129,7 @@ Formato: `AAAA-MM-DD — regra — (vídeo de origem)`
 - 2026-10-15 — Quem conversa com o Claude é o Diogo. — (criação)
 - 2026-10-15 — Nome com acento: Valéria. — (5-eixos)
 - 2026-10-15 — O Diogo pode colocar a música depois: sem faixa do Artlist, entregar sem música (só os efeitos). — (5-eixos)
+- 2026-10-15 — Sem efeitos sonoros nas palavras e transições. Música com leve batida, um pouco mais animada, sem ser dançante, sofisticada; volume um pouco mais alto (~0,18). — (5-eixos v2)
 - 2026-10-15 — Repetição/tropeço na fala pode ser cortado. Antes, confira se a repetição existe mesmo: o Whisper às vezes duplica palavras na emenda dos pedaços. — (5-eixos)
 
 ### Herdadas do editor do Diogo (valem até a Valéria dizer o contrário)

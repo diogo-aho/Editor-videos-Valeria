@@ -69,6 +69,7 @@ export type Roteiro = {
   musicas: Musica[];
   efeitos: Efeito[];
   encerramento: boolean;
+  efeitosAutomaticos?: boolean; // sons nas transições e palavras (padrão: sem)
   stories?: { inicio: number; fim: number }; // trecho da versão curta
   capa?: { foto: string; titulo: string; subtitulo?: string; foco?: string };
   carrossel?: { titulo: string; texto?: string }[];

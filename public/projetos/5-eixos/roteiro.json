@@ -1731,7 +1731,14 @@
       "y": 0.15
     }
   ],
-  "musicas": [],
+  "musicas": [
+    {
+      "arquivo": "musicas/5-eixos-leve-batida.mp3",
+      "inicio": 0,
+      "fim": 93.33,
+      "volume": 0.18
+    }
+  ],
   "efeitos": [],
   "encerramento": true
 }

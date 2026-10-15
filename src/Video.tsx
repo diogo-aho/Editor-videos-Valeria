@@ -89,8 +89,9 @@ export const Video: React.FC<Roteiro> = (roteiro) => {
   const f = (s: number) => Math.round(s * fps);
   const cenaEm = (t: number) => [...roteiro.cenas].reverse().find((c) => c.inicio <= t + 1e-3) ?? roteiro.cenas[0];
 
-  // efeitos automáticos: passagem entre cenas e entrada de animações (bem baixinhos)
-  const automaticos = [
+  // efeitos automáticos (passagem entre cenas e entrada de palavras): DESLIGADOS por padrão —
+  // a Valéria prefere sem. Só entram com "efeitosAutomaticos": true no roteiro.
+  const automaticos = !roteiro.efeitosAutomaticos ? [] : [
     ...roteiro.cenas.slice(1).map((c) => ({ arquivo: "sons/transicao.wav", em: c.inicio - TRANSICAO * 0.6, volume: 0.22 })),
     ...roteiro.sobreposicoes.map((s) => ({ arquivo: s.tipo === "palavraAtras" ? "sons/sopro.wav" : "sons/toque.wav", em: s.inicio, volume: 0.16 })),
   ];
@@ -131,7 +132,7 @@ export const Video: React.FC<Roteiro> = (roteiro) => {
           <Audio
             src={staticFile(m.arquivo)}
             volume={(fr) =>
-              (m.volume ?? 0.12) *
+              (m.volume ?? 0.18) *
               interpolate(fr / fps, [0, 1.2, m.fim - m.inicio - 1.8, m.fim - m.inicio], [0, 1, 1, 0], {
                 extrapolateLeft: "clamp",
                 extrapolateRight: "clamp",

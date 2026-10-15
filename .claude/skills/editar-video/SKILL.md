@@ -67,8 +67,8 @@ na linha do tempo já cortada. Monte assim:
 - **Animações sob medida:** crie em `src/animacoes/index.tsx` e registre em `ANIMACOES`.
   Mapas, gráficos, linhas do tempo… Elegantes, nunca chamativas. Nada de dado inventado.
 - **Música** (`musicas`): faixas do Artlist em `public/musicas/`. Troque a faixa quando a cena
-  muda de clima. Volume ~0,12 (a voz manda). Assunto energético: faixa mais forte.
-- **Efeitos:** transições e entradas de animação já ganham som automático; extras em `efeitos`.
+  muda de clima. Volume ~0,18 (a voz manda). Leve batida, sofisticada, sem ser dançante.
+- **Efeitos sonoros:** a Valéria prefere sem. Os automáticos estão desligados; só use `efeitos` se pedirem.
 - `capa`: foto escolhida pela Valéria + título curto (palavras dela). `stories` e `carrossel`
   só quando ela pedir.
 - `tema`/`clima`: escolha conforme o assunto (escuro/claro, quente/neutro). Pode revezar entre cenas ou mesclar.
