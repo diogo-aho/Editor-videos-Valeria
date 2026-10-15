@@ -2,7 +2,8 @@
 
 Editor de vídeos com IA em Remotion (React que vira vídeo). A Valeria grava; o Claude edita
 seguindo o formato abaixo. **Fale sempre em português, de forma simples.**
-O Diogo Carvalho (marido dela, @diogo.aho) também pode mandar material e pedidos em nome dela.
+**Quem conversa com o Claude é o Diogo Carvalho** (marido dela, @diogo.aho): ele manda o material,
+as opiniões dela e os pedidos. Perguntas e entregas vão para o Diogo.
 Este editor foi criado a partir do editor do Diogo (`Editor-de-v-deos_modelo-01`): mesmo formato,
 **paleta e identidade da Valeria**.
 
@@ -12,9 +13,9 @@ Para editar um vídeo, siga a skill **`editar-video`** (`.claude/skills/editar-v
 
 1. **A gravação é final.** Nunca peça para regravar. Corte os silêncios longos e nivele o volume (`scripts/preparar.py`).
 2. **Nada importante onde a rede coloca os botões.** Respeite `zonaSegura()` em `src/marca.ts`.
-3. **Nada de número ou dado inventado na tela.** Só o que a Valeria disse ou enviou. Na dúvida, pergunte.
-4. **Toda opinião da Valeria sobre um vídeo vira uma regra escrita** na seção "Regras aprendidas" abaixo, com a data.
-5. Legenda = exatamente o que ela falou. Se a transcrição tiver trecho duvidoso, pergunte antes de publicar.
+3. **Nada de número ou dado inventado na tela.** Só o que a Valeria disse ou o Diogo enviou. Na dúvida, pergunte ao Diogo.
+4. **Toda opinião sobre um vídeo (dela ou do Diogo) vira uma regra escrita** na seção "Regras aprendidas" abaixo, com a data.
+5. Legenda = exatamente o que ela falou. Se a transcrição tiver trecho duvidoso, pergunte ao Diogo antes de publicar.
 6. Antes de entregar, renderize quadros soltos (`npx remotion still`) e confira: rosto livre, legenda legível, zona segura.
 
 ## Quem é
@@ -26,16 +27,15 @@ Para editar um vídeo, siga a skill **`editar-video`** (`.claude/skills/editar-v
 - **Temas:** autoconhecimento e autodesenvolvimento; liderança e carreira; comunidade **Eixoz**
   (5 eixos: Consciência, Saúde, Família, Propósito e Prosperidade). A identidade da Eixoz ainda está
   sendo criada: não inventar.
-- **Público:** líderes executivos e empresários (a confirmar com a Valeria).
+- **Público:** líderes executivos e empresários.
 - **Tom:** elegante e sereno — confiança, acolhimento e autoridade. Nada chamativo. **Nunca memes.**
-  (a confirmar com a Valeria)
 
 ## Formatos
 
 | Composição | Tamanho | Uso | Duração |
 |---|---|---|---|
 | `Reels` (**principal — entrega padrão**) | 1080x1920 | Reels, TikTok, Shorts | até 90 s |
-| `Capa` / `CapaYouTube` | still | capa: foto enviada pela Valeria + textos | — |
+| `Capa` / `CapaYouTube` | still | capa: foto enviada pelo Diogo + textos | — |
 | `YouTube` | 1920x1080 | YouTube — só quando pedir | ~10 min |
 | `Feed` | 1080x1350 | feed Instagram/LinkedIn — só quando pedir | igual ao Reels |
 | `Stories` | 1080x1920 | versão curta — só quando pedir | 10–15 s |
@@ -43,7 +43,9 @@ Para editar um vídeo, siga a skill **`editar-video`** (`.claude/skills/editar-v
 
 ## Como ela grava
 
-A confirmar com a Valeria (aparelho, microfone, onde grava). Se for iPhone em HDR, `preparar.py` converte para SDR.
+Igual ao Diogo: iPhone 17 Pro Max + microfone de lapela. Fala para a câmera (em casa, na rua, em eventos e
+locais de trabalho). Às vezes manda fotos, prints, imagens e vídeos à parte. O iPhone grava em HDR:
+`preparar.py` converte para SDR.
 
 ## Estrutura da tela
 
@@ -89,7 +91,8 @@ A confirmar com a Valeria (aparelho, microfone, onde grava). Se for iPhone em HD
 - **Combinações:** escuro = fundo azul principal + texto off white + detalhes terracota ·
   claro neutro = fundo off white + texto azul profundo + detalhe terracota ·
   claro quente = fundo bege oatmeal + texto azul profundo + cacau de apoio · capa = fundo azul profundo.
-- **Tema** varia por vídeo: escuro (azul) ou claro (off white / bege), conforme o assunto e as imagens.
+- **Tema** depende do vídeo: escuro (azul) ou claro (off white / bege). Pode **revezar no mesmo vídeo** ou
+  **mesclar** (ex.: cenas claras e escuras alternadas, cartões claros sobre fundo azul).
 - **Letras:** Manrope (texto) + Cormorant Garamond (destaques). Legíveis, nada enfeitado.
 - Sem mascote. Movimentos suaves (`SUAVE` em `marca.ts`), nunca tremidos ou elásticos.
 
@@ -102,9 +105,9 @@ A confirmar com a Valeria (aparelho, microfone, onde grava). Se for iPhone em HD
 
 ## Entregas de cada vídeo
 
-- **Só o Reels** (entrega padrão). Stories, feed, YouTube e carrossel apenas quando ela pedir.
-- **Capa:** a Valeria manda a foto/imagem; o Claude cria os textos por cima (`Capa`).
-- **Legenda do post** e **mensagem da DM:** dependem do vídeo — **pergunte à Valeria** a cada vídeo.
+- **Só o Reels** (entrega padrão). Stories, feed, YouTube e carrossel apenas quando pedirem.
+- **Capa:** o Diogo manda a foto/imagem; o Claude cria os textos por cima (`Capa`).
+- **Legenda do post** e **mensagem da DM:** dependem do vídeo — **pergunte ao Diogo** a cada vídeo.
 
 ## Ambiente técnico
 
@@ -120,7 +123,9 @@ A confirmar com a Valeria (aparelho, microfone, onde grava). Se for iPhone em HD
 Formato: `AAAA-MM-DD — regra — (vídeo de origem)`
 
 - 2026-10-15 — Editor criado a partir do editor do Diogo: mesmo formato, paleta da Valeria. — (criação)
-- 2026-10-15 — Assinatura pessoal (nome + @), sem logo. — (criação)
+- 2026-10-15 — Assinatura pessoal (nome + @), sem logo: ela não tem logo. — (criação)
+- 2026-10-15 — Público e tom confirmados; letras, gravação, música e referências iguais aos do Diogo; tema claro/escuro pode revezar ou mesclar no mesmo vídeo. — (criação)
+- 2026-10-15 — Quem conversa com o Claude é o Diogo. — (criação)
 
 ### Herdadas do editor do Diogo (valem até a Valeria dizer o contrário)
 

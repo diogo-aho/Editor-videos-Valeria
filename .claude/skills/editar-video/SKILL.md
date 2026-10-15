@@ -1,6 +1,6 @@
 ---
 name: editar-video
-description: Passo a passo para editar um vídeo da Valeria Carinhato (@valeriacarinhato) no padrão dela — da gravação bruta ao Reels, YouTube, feed, Stories, capa e carrossel. Use sempre que a Valeria (ou o Diogo, por ela) mandar uma gravação, áudio, fotos ou vídeos para virar conteúdo, ou pedir para editar/refazer um vídeo.
+description: Passo a passo para editar um vídeo da Valeria Carinhato (@valeriacarinhato) no padrão dela — da gravação bruta ao Reels, YouTube, feed, Stories, capa e carrossel. Use sempre que o Diogo mandar (por ela) uma gravação, áudio, fotos ou vídeos para virar conteúdo, ou pedir para editar/refazer um vídeo.
 ---
 
 # Editar um vídeo da Valeria
@@ -29,7 +29,7 @@ Converte HDR→SDR, corta silêncios longos (>0,6 s; ajuste com `--silencio`), n
 
 **Revise a transcrição** lendo o texto inteiro: corrija nomes de pessoas, empresas e cargos,
 termos de RH e liderança, Eixoz. Erros que se repetem vão para `scripts/correcoes.json`.
-Trecho que não dá para entender: **pergunte à Valeria** — a legenda tem que ser o que ela disse.
+Trecho que não dá para entender: **pergunte ao Diogo** — a legenda tem que ser o que ela disse.
 
 ## 2. Recortar a silhueta (para animações que passam atrás dela)
 
@@ -63,7 +63,7 @@ na linha do tempo já cortada. Monte assim:
 - **Legenda por cena:** `"legenda": 0.72` muda a altura; `"legenda": "esconder"` quando a animação
   já mostra as palavras. Gravação aberta (corpo inteiro): use `orador.escalaBase` (~1.3–1.6) e
   varie entre cenas seguidas para dar ritmo.
-- **Legenda do post e DM:** escreva em `public/projetos/<nome>/post.md` e mostre à Valeria.
+- **Legenda do post e DM:** escreva em `public/projetos/<nome>/post.md` e mostre ao Diogo.
 - **Animações sob medida:** crie em `src/animacoes/index.tsx` e registre em `ANIMACOES`.
   Mapas, gráficos, linhas do tempo… Elegantes, nunca chamativas. Nada de dado inventado.
 - **Música** (`musicas`): faixas do Artlist em `public/musicas/`. Troque a faixa quando a cena
@@ -71,7 +71,7 @@ na linha do tempo já cortada. Monte assim:
 - **Efeitos:** transições e entradas de animação já ganham som automático; extras em `efeitos`.
 - `capa`: foto escolhida pela Valeria + título curto (palavras dela). `stories` e `carrossel`
   só quando ela pedir.
-- `tema`/`clima`: escolha conforme as imagens do projeto (escuro/claro, quente/neutro).
+- `tema`/`clima`: escolha conforme o assunto (escuro/claro, quente/neutro). Pode revezar entre cenas ou mesclar.
 
 ## 4. Conferir antes de renderizar
 
@@ -92,11 +92,11 @@ Gera em `out/<nome>/`: os vídeos, `capa.png` (e `capa-youtube.png`) e `carrosse
 Vídeos acima de 30 MB ganham uma cópia `*-para-postar.mp4` (<30 MB): é ela que se envia na conversa (limite de 30 MB).
 Para um só formato: `npx remotion render src/index.ts Reels out/x.mp4 --props=public/projetos/<nome>/roteiro.json`.
 
-Mande os arquivos à Valeria com um resumo curto em português e **a legenda do post e a DM**
+Mande os arquivos ao Diogo com um resumo curto em português e **a legenda do post e a DM**
 que ela pediu. Faça commit do roteiro e do código (mídias grandes ficam fora do Git).
 
-## 6. Depois da opinião da Valeria
+## 6. Depois da opinião da Valeria (ou do Diogo)
 
-Toda opinião dela vira regra em `CLAUDE.md` → "Regras aprendidas", com a data:
+Toda opinião vira regra em `CLAUDE.md` → "Regras aprendidas", com a data:
 `2026-10-20 — legenda um pouco maior nos vídeos de palestra — (vídeo "lideranca-01")`.
 Se a regra muda o padrão do código (cores, tamanhos, posições), ajuste o código também.
