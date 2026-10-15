@@ -23,7 +23,8 @@ export type Orador = {
 export type Zoom = { em: number; escala: number; ate?: number };
 
 // legenda: posição da legenda nesta cena (fração da altura) ou "esconder" (quando a animação já mostra a fala)
-type Legendavel = { legenda?: number | "esconder" };
+// tema/clima: troca o tema só nesta cena (para revezar claro e escuro no mesmo vídeo)
+type Legendavel = { legenda?: number | "esconder"; tema?: Tema; clima?: Clima };
 
 export type Cena = Legendavel &
   (

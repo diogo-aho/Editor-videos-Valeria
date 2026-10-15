@@ -1,9 +1,9 @@
 ---
 name: editar-video
-description: Passo a passo para editar um vídeo da Valeria Carinhato (@valeriacarinhato) no padrão dela — da gravação bruta ao Reels, YouTube, feed, Stories, capa e carrossel. Use sempre que o Diogo mandar (por ela) uma gravação, áudio, fotos ou vídeos para virar conteúdo, ou pedir para editar/refazer um vídeo.
+description: Passo a passo para editar um vídeo da Valéria Carinhato (@valeriacarinhato) no padrão dela — da gravação bruta ao Reels, YouTube, feed, Stories, capa e carrossel. Use sempre que o Diogo mandar (por ela) uma gravação, áudio, fotos ou vídeos para virar conteúdo, ou pedir para editar/refazer um vídeo.
 ---
 
-# Editar um vídeo da Valeria
+# Editar um vídeo da Valéria
 
 Leia o `CLAUDE.md` antes (formato, regras e "Regras aprendidas"). Fale em português simples.
 Para detalhes de Remotion, use a skill `remotion-best-practices`.
@@ -69,7 +69,7 @@ na linha do tempo já cortada. Monte assim:
 - **Música** (`musicas`): faixas do Artlist em `public/musicas/`. Troque a faixa quando a cena
   muda de clima. Volume ~0,12 (a voz manda). Assunto energético: faixa mais forte.
 - **Efeitos:** transições e entradas de animação já ganham som automático; extras em `efeitos`.
-- `capa`: foto escolhida pela Valeria + título curto (palavras dela). `stories` e `carrossel`
+- `capa`: foto escolhida pela Valéria + título curto (palavras dela). `stories` e `carrossel`
   só quando ela pedir.
 - `tema`/`clima`: escolha conforme o assunto (escuro/claro, quente/neutro). Pode revezar entre cenas ou mesclar.
 
@@ -95,7 +95,7 @@ Para um só formato: `npx remotion render src/index.ts Reels out/x.mp4 --props=p
 Mande os arquivos ao Diogo com um resumo curto em português e **a legenda do post e a DM**
 que ela pediu. Faça commit do roteiro e do código (mídias grandes ficam fora do Git).
 
-## 6. Depois da opinião da Valeria (ou do Diogo)
+## 6. Depois da opinião da Valéria (ou do Diogo)
 
 Toda opinião vira regra em `CLAUDE.md` → "Regras aprendidas", com a data:
 `2026-10-20 — legenda um pouco maior nos vídeos de palestra — (vídeo "lideranca-01")`.

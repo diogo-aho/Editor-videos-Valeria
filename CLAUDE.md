@@ -1,11 +1,11 @@
-# Editor de vídeos da Valeria Carinhato (@valeriacarinhato)
+# Editor de vídeos da Valéria Carinhato (@valeriacarinhato)
 
-Editor de vídeos com IA em Remotion (React que vira vídeo). A Valeria grava; o Claude edita
+Editor de vídeos com IA em Remotion (React que vira vídeo). A Valéria grava; o Claude edita
 seguindo o formato abaixo. **Fale sempre em português, de forma simples.**
 **Quem conversa com o Claude é o Diogo Carvalho** (marido dela, @diogo.aho): ele manda o material,
 as opiniões dela e os pedidos. Perguntas e entregas vão para o Diogo.
 Este editor foi criado a partir do editor do Diogo (`Editor-de-v-deos_modelo-01`): mesmo formato,
-**paleta e identidade da Valeria**.
+**paleta e identidade da Valéria**.
 
 Para editar um vídeo, siga a skill **`editar-video`** (`.claude/skills/editar-video/SKILL.md`).
 
@@ -13,14 +13,14 @@ Para editar um vídeo, siga a skill **`editar-video`** (`.claude/skills/editar-v
 
 1. **A gravação é final.** Nunca peça para regravar. Corte os silêncios longos e nivele o volume (`scripts/preparar.py`).
 2. **Nada importante onde a rede coloca os botões.** Respeite `zonaSegura()` em `src/marca.ts`.
-3. **Nada de número ou dado inventado na tela.** Só o que a Valeria disse ou o Diogo enviou. Na dúvida, pergunte ao Diogo.
+3. **Nada de número ou dado inventado na tela.** Só o que a Valéria disse ou o Diogo enviou. Na dúvida, pergunte ao Diogo.
 4. **Toda opinião sobre um vídeo (dela ou do Diogo) vira uma regra escrita** na seção "Regras aprendidas" abaixo, com a data.
 5. Legenda = exatamente o que ela falou. Se a transcrição tiver trecho duvidoso, pergunte ao Diogo antes de publicar.
 6. Antes de entregar, renderize quadros soltos (`npx remotion still`) e confira: rosto livre, legenda legível, zona segura.
 
 ## Quem é
 
-- **Nome nos vídeos:** Valeria Carinhato · **@valeriacarinhato** · assinatura pessoal (nome + @, sem logo).
+- **Nome nos vídeos:** **Valéria** Carinhato (com acento) · **@valeriacarinhato** · assinatura pessoal (nome + @, sem logo).
 - **Fotos:** `public/valeria/fotos/` (recortes de silhueta: `foto-N-recorte.png`). foto-1 = blazer bege, fundo
   cinza (meio corpo); foto-2 = rosto bem de perto; foto-3 = blazer marrom, fundo de ripas de madeira.
   São recortes de baixa resolução (até ~960 px): servem para capa pequena, cartões e assinatura, não para tela cheia.
@@ -119,16 +119,19 @@ locais de trabalho). Às vezes manda fotos, prints, imagens e vídeos à parte. 
   "Acesso à rede" para baixar referências). Instagram, Google Drive e GitHub liberados.
 - Navegador de render: Chrome Headless Shell do ambiente (`remotion.config.ts`).
 
-## Regras aprendidas (opiniões da Valeria)
+## Regras aprendidas (opiniões da Valéria)
 
 Formato: `AAAA-MM-DD — regra — (vídeo de origem)`
 
-- 2026-10-15 — Editor criado a partir do editor do Diogo: mesmo formato, paleta da Valeria. — (criação)
+- 2026-10-15 — Editor criado a partir do editor do Diogo: mesmo formato, paleta da Valéria. — (criação)
 - 2026-10-15 — Assinatura pessoal (nome + @), sem logo: ela não tem logo. — (criação)
 - 2026-10-15 — Público e tom confirmados; letras, gravação, música e referências iguais aos do Diogo; tema claro/escuro pode revezar ou mesclar no mesmo vídeo. — (criação)
 - 2026-10-15 — Quem conversa com o Claude é o Diogo. — (criação)
+- 2026-10-15 — Nome com acento: Valéria. — (5-eixos)
+- 2026-10-15 — O Diogo pode colocar a música depois: sem faixa do Artlist, entregar sem música (só os efeitos). — (5-eixos)
+- 2026-10-15 — Repetição/tropeço na fala pode ser cortado. Antes, confira se a repetição existe mesmo: o Whisper às vezes duplica palavras na emenda dos pedaços. — (5-eixos)
 
-### Herdadas do editor do Diogo (valem até a Valeria dizer o contrário)
+### Herdadas do editor do Diogo (valem até a Valéria dizer o contrário)
 
 - Toda mensagem é em português, sem exceção.
 - Quando ela falar um nome errado, a legenda mantém o que ela disse e entra uma "nota do editor" (sobreposição `correcao`) corrigindo com leveza e um toque de humor.

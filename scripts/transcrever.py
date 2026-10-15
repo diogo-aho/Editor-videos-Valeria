@@ -49,7 +49,19 @@ def trechos_com_voz(audio, pausa_min=0.12):
                 ini, silencio = None, 0
     if ini is not None:
         trechos.append([ini * 0.02, n * 0.02])
-    return [t for t in trechos if t[1] - t[0] >= 0.06]
+    trechos = [t for t in trechos if t[1] - t[0] >= 0.06]
+    # Com ruído de fundo (rua, vento, plantas) a fala pode virar um trecho só, longo demais
+    # para o Whisper (que descarta o que passa de 30 s). Divide no ponto mais baixo de energia.
+    suave = np.convolve(energia, np.ones(5) / 5, mode="same")
+
+    def partir(a, b):
+        if b - a <= FRASE_MAX:
+            return [[a, b]]
+        i0, i1 = int((a + 2) / 0.02), int((b - 2) / 0.02)
+        m = i0 + int(np.argmin(suave[i0:i1]))
+        return partir(a, m * 0.02) + partir(m * 0.02 + 0.04, b)
+
+    return [p for a, b in trechos for p in partir(a, b)]
 
 
 def agrupar_em_frases(trechos):

@@ -1,4 +1,4 @@
-// Identidade visual da Valeria Carinhato (@valeriacarinhato).
+// Identidade visual da Valéria Carinhato (@valeriacarinhato).
 // Empresária, headhunter e mentora de líderes. Elegância serena: confiança, acolhimento e autoridade.
 
 // Paleta oficial (2026-10-15). Os azuis e os neutros dominam; a TERRACOTA só marca:
@@ -81,4 +81,4 @@ export const zonaSegura = (formato: Formato) => {
 };
 
 export const ARROBA = "@valeriacarinhato";
-export const NOME = "Valeria Carinhato";
+export const NOME = "Valéria Carinhato";

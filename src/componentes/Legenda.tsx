@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
-import { fontes, formatoDe, SUAVE } from "../marca";
+import { cores, fontes, formatoDe, SUAVE } from "../marca";
 import type { Palavra } from "../tipos";
 
 // Legenda clássica da Valeria:
@@ -37,7 +37,8 @@ export const montarLinhas = (palavras: Palavra[]): Linha[] => {
 
 const PALAVRA_SOLTA = /^([«"“(]*)(.*?)([.,!?;:…»"”)]*)$/;
 
-const TextoLinha: React.FC<{ linha: Linha; tamanho: number }> = ({ linha, tamanho }) => (
+// escura = legenda sobre fundo claro (off white / bege): letra azul profundo, sem brilho branco
+const TextoLinha: React.FC<{ linha: Linha; tamanho: number; escura?: boolean }> = ({ linha, tamanho, escura }) => (
   <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "baseline", gap: tamanho * 0.28 }}>
     {linha.palavras.map((p, i) => {
       const [, abre, nucleo, fecha] = p.palavra.match(PALAVRA_SOLTA) ?? ["", "", p.palavra, ""];
@@ -51,9 +52,9 @@ const TextoLinha: React.FC<{ linha: Linha; tamanho: number }> = ({ linha, tamanh
             fontStyle: "italic",
             fontWeight: 600,
             fontSize: tamanho * 1.32,
-            color: "#FFFFFF",
+            color: escura ? cores.azulProfundo : "#FFFFFF",
             letterSpacing: "0.005em",
-            textShadow: "0 0 18px rgba(255,255,255,0.38), 0 2px 14px rgba(0,0,0,0.45)",
+            textShadow: escura ? "none" : "0 0 18px rgba(255,255,255,0.38), 0 2px 14px rgba(0,0,0,0.45)",
           }}
         >
           {abre}
@@ -67,9 +68,9 @@ const TextoLinha: React.FC<{ linha: Linha; tamanho: number }> = ({ linha, tamanh
             fontFamily: fontes.texto,
             fontWeight: 600,
             fontSize: tamanho,
-            color: "rgba(255,255,255,0.93)",
+            color: escura ? cores.azulProfundo : "rgba(255,255,255,0.93)",
             letterSpacing: "-0.01em",
-            textShadow: "0 2px 14px rgba(0,0,0,0.5), 0 0 2px rgba(0,0,0,0.25)",
+            textShadow: escura ? "none" : "0 2px 14px rgba(0,0,0,0.5), 0 0 2px rgba(0,0,0,0.25)",
           }}
         >
           {abre}
@@ -84,7 +85,8 @@ const TextoLinha: React.FC<{ linha: Linha; tamanho: number }> = ({ linha, tamanh
 export const Legenda: React.FC<{
   palavras: Palavra[];
   posicaoY: (segundos: number) => number | null; // centro da legenda (fração da altura) ou null = escondida
-}> = ({ palavras, posicaoY }) => {
+  escuraEm?: (segundos: number) => boolean; // true quando a legenda está sobre fundo claro
+}> = ({ palavras, posicaoY, escuraEm }) => {
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
   const t = frame / fps;
@@ -135,7 +137,7 @@ export const Legenda: React.FC<{
               transform: `translateY(${deslocamento}px)`,
             }}
           >
-            <TextoLinha linha={linha} tamanho={tamanho} />
+            <TextoLinha linha={linha} tamanho={tamanho} escura={escuraEm?.(t)} />
           </div>
         );
       })}

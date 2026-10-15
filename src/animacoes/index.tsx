@@ -3,6 +3,7 @@ import { AbsoluteFill, Easing, interpolate, random, useCurrentFrame } from "remo
 import { useArea } from "./area";
 import { fontes, paleta, SUAVE, type Clima, type Tema } from "../marca";
 import { Aroma, Escrita, Filme, Grafirmaliza, PortasSensoriais, Vinil } from "./eixoz";
+import { Chama, Eixos, Infinito, Perguntas, Problemas } from "./valeria";
 
 // Animações feitas sob medida. Cada vídeo pode ganhar novas: crie aqui e registre em ANIMACOES.
 // Regra: nada de número ou dado inventado. Só o que a Valeria disse ou enviou.
@@ -106,4 +107,9 @@ export const ANIMACOES: Record<string, React.FC<PropsAnimacao>> = {
   vinil: Vinil,
   escrita: Escrita,
   aroma: Aroma,
+  eixos: Eixos,
+  infinito: Infinito,
+  problemas: Problemas,
+  chama: Chama,
+  perguntas: Perguntas,
 };

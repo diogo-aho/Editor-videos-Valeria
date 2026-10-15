@@ -32,7 +32,7 @@ const posicaoLegenda = (cena: Cena | undefined, formato: ReturnType<typeof forma
 };
 
 const ComponenteCena: React.FC<{ cena: Cena; roteiro: Roteiro; inicioSeq: number }> = ({ cena, roteiro, inicioSeq }) => {
-  const comum = { tema: roteiro.tema, clima: roteiro.clima, inicioSeq, oradorPadrao: roteiro.orador };
+  const comum = { tema: cena.tema ?? roteiro.tema, clima: cena.clima ?? roteiro.clima, inicioSeq, oradorPadrao: roteiro.orador };
   switch (cena.tipo) {
     case "rosto": {
       const atras = roteiro.sobreposicoes.filter(
@@ -109,7 +109,15 @@ export const Video: React.FC<Roteiro> = (roteiro) => {
       })}
 
       <Sobreposicoes itens={roteiro.sobreposicoes} tema={roteiro.tema} clima={roteiro.clima} />
-      <Legenda palavras={roteiro.palavras} posicaoY={(t) => (t > roteiro.duracao + 0.3 ? null : posicaoLegenda(cenaEm(t), formato, height))} />
+      <Legenda
+        palavras={roteiro.palavras}
+        posicaoY={(t) => (t > roteiro.duracao + 0.3 ? null : posicaoLegenda(cenaEm(t), formato, height))}
+        escuraEm={(t) => {
+          // legenda em cima da ilustração clara (tela dividida ou cheia) fica escura
+          const c = cenaEm(t);
+          return (c.tipo === "dividida" || c.tipo === "telaCheia") && (c.tema ?? roteiro.tema) === "claro";
+        }}
+      />
 
       {roteiro.encerramento && (
         <Sequence name="assinatura" from={f(roteiro.duracao)} premountFor={fps}>
