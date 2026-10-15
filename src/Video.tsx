@@ -5,8 +5,8 @@ import { CenaDividida, CenaRosto, CenaTelaCheia, CenaTextoGrande } from "./compo
 import { Legenda } from "./componentes/Legenda";
 import { Sobreposicoes } from "./componentes/Sobreposicoes";
 import "./fontes";
-import { ARROBA, cores, fontes, formatoDe, NOME, paleta, SUAVE, zonaSegura } from "./marca";
-import type { Cena, Roteiro, Sobreposicao } from "./tipos";
+import { ARROBA, cores, fontes, formatoDe, NOME, paleta, rgba, SUAVE, zonaSegura } from "./marca";
+import type { Cena, Roteiro, Sobreposicao, Transicao } from "./tipos";
 
 const suave = Easing.bezier(...SUAVE);
 export const TRANSICAO = 0.4; // segundos de passagem suave entre cenas
@@ -23,7 +23,7 @@ const posicaoLegenda = (cena: Cena | undefined, formato: ReturnType<typeof forma
     case "rosto": // altura do peito
       return Math.min(formato === "horizontal" ? 0.78 : 0.64, limiteBase);
     case "dividida": // na parte de baixo da ilustração, logo acima do fio (o rosto fica livre)
-      return formato === "horizontal" ? Math.min(0.82, limiteBase) : 0.42;
+      return formato === "horizontal" ? Math.min(0.82, limiteBase) : 0.335; // ilustração ocupa 40% de cima
     case "telaCheia":
       return Math.min(formato === "horizontal" ? 0.84 : 0.7, limiteBase);
     case "textoGrande": // a frase já está na tela
@@ -50,15 +50,84 @@ const ComponenteCena: React.FC<{ cena: Cena; roteiro: Roteiro; inicioSeq: number
   }
 };
 
-// Passagem elegante: a cena nova surge por cima com fade, leve desfoque e aproximação.
-const Entrada: React.FC<{ children: React.ReactNode; primeira: boolean }> = ({ children, primeira }) => {
+// Passagens entre cenas. "suave" (padrão): a cena nova surge por cima com fade, leve desfoque e aproximação.
+// Artísticas, para pontos estratégicos (troca de assunto, frase forte):
+//  "luz"     — um feixe de luz quente atravessa a tela enquanto a cena entra
+//  "cortina" — a cena nova entra na diagonal, com um fio terracota na borda
+//  "circulo" — a cena nova se abre do centro, como uma íris, com um anel terracota
+//  "linha"   — um fio horizontal se abre e revela a cena (de dentro para fora)
+const Entrada: React.FC<{ children: React.ReactNode; primeira: boolean; tipo?: Transicao }> = ({ children, primeira, tipo = "suave" }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, width, height } = useVideoConfig();
   if (primeira) return <AbsoluteFill>{children}</AbsoluteFill>;
-  const p = suave(Math.min(1, frame / (TRANSICAO * fps)));
+  const t = frame / fps;
+  const p = suave(Math.min(1, t / TRANSICAO));
+  if (tipo === "suave") {
+    return (
+      <AbsoluteFill style={{ opacity: p, transform: `scale(${1.035 - 0.035 * p})`, filter: p < 1 ? `blur(${(1 - p) * 8}px)` : undefined }}>
+        {children}
+      </AbsoluteFill>
+    );
+  }
+  const q = suave(Math.min(1, t / (TRANSICAO * 1.6))); // as artísticas duram um pouco mais
+  if (tipo === "luz") {
+    const passa = Math.min(1, t / 1.1);
+    const x = interpolate(passa, [0, 1], [-0.6, 1.6]) * width;
+    const forca = Math.sin(passa * Math.PI);
+    return (
+      <AbsoluteFill>
+        <AbsoluteFill style={{ opacity: p }}>{children}</AbsoluteFill>
+        <AbsoluteFill
+          style={{
+            background: `linear-gradient(105deg, transparent ${(x / width) * 100 - 35}%, ${rgba.terracota(0.35 * forca)} ${(x / width) * 100 - 12}%, ${rgba.offWhite(0.55 * forca)} ${(x / width) * 100}%, ${rgba.terracota(0.25 * forca)} ${(x / width) * 100 + 14}%, transparent ${(x / width) * 100 + 38}%)`,
+            mixBlendMode: "screen",
+          }}
+        />
+      </AbsoluteFill>
+    );
+  }
+  if (tipo === "cortina") {
+    // borda diagonal que varre da esquerda para a direita
+    const b = interpolate(q, [0, 1], [-25, 125]);
+    return (
+      <AbsoluteFill>
+        <AbsoluteFill style={{ clipPath: `polygon(0 0, ${b + 12}% 0, ${b - 12}% 100%, 0 100%)` }}>{children}</AbsoluteFill>
+        {q < 1 && (
+          <svg width={width} height={height} style={{ position: "absolute", inset: 0 }}>
+            <line x1={((b + 12) / 100) * width} y1={0} x2={((b - 12) / 100) * width} y2={height} stroke={cores.terracota} strokeWidth={3} />
+            <line x1={((b + 12) / 100) * width + 14} y1={0} x2={((b - 12) / 100) * width + 14} y2={height} stroke={cores.offWhite} strokeOpacity={0.35} strokeWidth={1} />
+          </svg>
+        )}
+      </AbsoluteFill>
+    );
+  }
+  if (tipo === "circulo") {
+    const raio = Math.hypot(width, height) * 0.55 * q;
+    return (
+      <AbsoluteFill>
+        <AbsoluteFill style={{ clipPath: `circle(${raio}px at 50% 45%)` }}>{children}</AbsoluteFill>
+        {q < 1 && (
+          <svg width={width} height={height} style={{ position: "absolute", inset: 0 }}>
+            <circle cx={width / 2} cy={height * 0.45} r={raio} fill="none" stroke={cores.terracota} strokeWidth={3} />
+            <circle cx={width / 2} cy={height * 0.45} r={raio + 16} fill="none" stroke={cores.offWhite} strokeOpacity={0.3 * (1 - q)} strokeWidth={1} />
+          </svg>
+        )}
+      </AbsoluteFill>
+    );
+  }
+  // linha
+  const fio = suave(Math.min(1, t / 0.3));
+  const abre = suave(Math.min(1, Math.max(0, (t - 0.18) / (TRANSICAO * 1.4))));
+  const meia = abre * 50;
   return (
-    <AbsoluteFill style={{ opacity: p, transform: `scale(${1.035 - 0.035 * p})`, filter: p < 1 ? `blur(${(1 - p) * 8}px)` : undefined }}>
-      {children}
+    <AbsoluteFill>
+      <AbsoluteFill style={{ clipPath: `inset(${50 - meia}% 0 ${50 - meia}% 0)` }}>{children}</AbsoluteFill>
+      {abre < 1 && (
+        <>
+          <div style={{ position: "absolute", left: `${50 - fio * 50}%`, width: `${fio * 100}%`, top: `${50 - meia}%`, height: 2, background: cores.terracota }} />
+          <div style={{ position: "absolute", left: `${50 - fio * 50}%`, width: `${fio * 100}%`, top: `${50 + meia}%`, height: 2, background: cores.terracota }} />
+        </>
+      )}
     </AbsoluteFill>
   );
 };
@@ -102,7 +171,7 @@ export const Video: React.FC<Roteiro> = (roteiro) => {
         const inicio = i === 0 ? cena.inicio : cena.inicio - TRANSICAO;
         return (
           <Sequence key={i} name={`${cena.tipo} ${cena.inicio}s`} from={f(inicio)} durationInFrames={f(cena.fim - inicio) + 1} premountFor={fps}>
-            <Entrada primeira={i === 0}>
+            <Entrada primeira={i === 0} tipo={cena.transicao}>
               <ComponenteCena cena={cena} roteiro={roteiro} inicioSeq={inicio} />
             </Entrada>
           </Sequence>

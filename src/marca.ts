@@ -55,8 +55,9 @@ export const paleta = (tema: Tema, clima: Clima) => {
 };
 
 export const fontes = {
-  texto: "Manrope",
-  destaque: "Cormorant Garamond",
+  texto: "Manrope", // legenda e textos corridos
+  destaque: "Cormorant Garamond", // destaques da legenda, palavras flutuantes, texto grande
+  animacao: "Josefin Sans", // palavras DENTRO das animações (diferente da legenda e das flutuantes)
 };
 
 // Movimento: suave e elegante. Nunca tremido, nunca elástico.

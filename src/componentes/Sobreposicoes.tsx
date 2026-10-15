@@ -131,13 +131,17 @@ const Flutuante: React.FC<{ item: Extract<Sobreposicao, { tipo: "flutuante" }>; 
           fontFamily: fontes.destaque,
           fontStyle: "italic",
           fontWeight: 600,
-          fontSize: base * 0.1,
+          fontSize: base * 0.122, // sempre maior que a legenda (74 px)
           color: cores.offWhite,
-          textShadow: "0 4px 26px rgba(0,0,0,0.7), 0 0 3px rgba(0,0,0,0.45)",
-          clipPath: esquerda ? `inset(-20% ${100 - revela * 100}% -20% -5%)` : `inset(-20% -5% -20% ${100 - revela * 100}%)`,
+          // leve 3D: camadas finas deslocadas (espessura da letra) + sombra suave embaixo
+          textShadow: [
+            ...[1, 2, 3, 4, 5].map((k) => `${k * 0.7}px ${k}px 0 ${rgba.azulProfundo(0.55 - k * 0.06)}`),
+            "0 10px 26px rgba(0,0,0,0.55)",
+          ].join(", "),
+          clipPath: esquerda ? `inset(-30% ${100 - revela * 100}% -30% -5%)` : `inset(-30% -5% -30% ${100 - revela * 100}%)`,
         }}
       >
-        {item.texto}
+        {item.texto.charAt(0).toUpperCase() + item.texto.slice(1)}
       </span>
     </div>
   );
@@ -217,6 +221,37 @@ const Numero: React.FC<{ item: Extract<Sobreposicao, { tipo: "numero" }>; tema: 
   );
 };
 
+// Ligação: linha curva que se desenha entre dois pontos (ex.: duas palavras flutuantes), com um ponto
+// de luz que viaja por ela. de/para em fração do quadro; curva > 0 arqueia para cima (contorna a cabeça).
+const Ligacao: React.FC<{ item: Extract<Sobreposicao, { tipo: "ligacao" }> }> = ({ item }) => {
+  const { width, height } = useVideoConfig();
+  const t = useTempo();
+  const vis = entradaSaida(t, item.inicio, item.fim, 0.4);
+  if (vis <= 0) return null;
+  const desenha = suave(Math.min(1, Math.max(0, (t - item.inicio) / 0.9)));
+  const [x1, y1] = [item.de[0] * width, item.de[1] * height];
+  const [x2, y2] = [item.para[0] * width, item.para[1] * height];
+  const curva = (item.curva ?? 0.12) * height;
+  // controle: ponto (fração do quadro) por onde a curva passa por fora — use para contornar o rosto
+  const cx = item.controle ? item.controle[0] * width : (x1 + x2) / 2;
+  const cy = item.controle ? item.controle[1] * height : Math.min(y1, y2) - curva;
+  const d = `M${x1},${y1} Q${cx},${cy} ${x2},${y2}`;
+  const comp = Math.hypot(cx - x1, cy - y1) + Math.hypot(x2 - cx, y2 - cy);
+  // ponto que viaja pela curva (bezier quadrática)
+  const u = ((t - item.inicio) * 0.45) % 1;
+  const px = (1 - u) ** 2 * x1 + 2 * (1 - u) * u * cx + u ** 2 * x2;
+  const py = (1 - u) ** 2 * y1 + 2 * (1 - u) * u * cy + u ** 2 * y2;
+  return (
+    <svg width={width} height={height} style={{ position: "absolute", inset: 0, opacity: vis }}>
+      <path d={d} fill="none" stroke={cores.offWhite} strokeOpacity={0.25} strokeWidth={6} strokeDasharray={comp} strokeDashoffset={comp * (1 - desenha)} />
+      <path d={d} fill="none" stroke={cores.terracota} strokeWidth={2} strokeDasharray={comp} strokeDashoffset={comp * (1 - desenha)} />
+      <circle cx={x1} cy={y1} r={6} fill={cores.terracota} />
+      <circle cx={x2} cy={y2} r={6 * desenha} fill={cores.terracota} />
+      {desenha >= 1 && <circle cx={px} cy={py} r={5} fill={cores.offWhite} opacity={0.9} />}
+    </svg>
+  );
+};
+
 // Sobreposições que ficam por cima de tudo (as "palavraAtras" são desenhadas dentro da cena de rosto).
 export const Sobreposicoes: React.FC<{ itens: Sobreposicao[]; tema: Tema; clima: Clima }> = ({ itens, tema, clima }) => (
   <AbsoluteFill style={{ pointerEvents: "none" }}>
@@ -229,6 +264,8 @@ export const Sobreposicoes: React.FC<{ itens: Sobreposicao[]; tema: Tema; clima:
         <Correcao key={i} item={item} />
       ) : item.tipo === "numero" ? (
         <Numero key={i} item={item} tema={tema} clima={clima} />
+      ) : item.tipo === "ligacao" ? (
+        <Ligacao key={i} item={item} />
       ) : null,
     )}
   </AbsoluteFill>

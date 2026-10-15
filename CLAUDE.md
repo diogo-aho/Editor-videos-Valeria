@@ -12,6 +12,7 @@ Para editar um vídeo, siga a skill **`editar-video`** (`.claude/skills/editar-v
 ## Regras que valem sempre
 
 1. **A gravação é final.** Nunca peça para regravar. Corte os silêncios longos e nivele o volume (`scripts/preparar.py`).
+   Corte também **gaguejos, repetições e tropeços** (`scripts/cortar.py`), conferindo antes que existem mesmo.
 2. **Nada importante onde a rede coloca os botões.** Respeite `zonaSegura()` em `src/marca.ts`.
 3. **Nada de número ou dado inventado na tela.** Só o que a Valéria disse ou o Diogo enviou. Na dúvida, pergunte ao Diogo.
 4. **Toda opinião sobre um vídeo (dela ou do Diogo) vira uma regra escrita** na seção "Regras aprendidas" abaixo, com a data.
@@ -52,12 +53,19 @@ locais de trabalho). Às vezes manda fotos, prints, imagens e vídeos à parte. 
 
 - Começa com o rosto; no meio alterna **tela dividida** (ilustra o que ela diz) e **imagens de apoio
   em tela cheia**; termina com o rosto + assinatura (nome e @).
+- **Tela dividida 40/60:** animação ou imagem em cima (40%), ela embaixo (60%).
+- **Transições:** a suave é o padrão; em **pontos estratégicos** (troca de assunto, frase forte) use as
+  artísticas: `"transicao": "luz" | "cortina" | "circulo" | "linha"` na cena. Sem exagero (umas 4–6 por vídeo).
+- **Grafismos que conectam:** linhas que ligam palavras (`ligacao`), quadros, gráficos e pontos de conexão
+  dentro das animações, para o vídeo ficar dinâmico.
 - Ela **some** da tela quando o que vai ser mostrado é muito importante.
 - **Animações ao redor dela:** flutuam, passam e **atravessam por trás** (`palavraAtras`, usa o
   recorte da silhueta) em números, dados e destaques que não pedem uma imagem.
 - **Edição:** animações sob medida e **criativas** (objetos que se desenham, sílabas que voam, partículas,
   cadernos que se escrevem…), cortes e zoom (frases fortes), imagens de apoio, textos grandes, prints.
   **Muitas palavras-chave flutuando** (`flutuante`): acima da cabeça ou na altura do peito, nunca no rosto.
+  **Maiores que a legenda**, primeira letra sempre **maiúscula**, com sombra em camadas que dá **leve 3D**
+  (espessura na letra).
   **Ritmo médio**, com respiro quando a fala pedir.
 
 ## Legenda
@@ -94,7 +102,9 @@ locais de trabalho). Às vezes manda fotos, prints, imagens e vídeos à parte. 
   claro quente = fundo bege oatmeal + texto azul profundo + cacau de apoio · capa = fundo azul profundo.
 - **Tema** depende do vídeo: escuro (azul) ou claro (off white / bege). Pode **revezar no mesmo vídeo** ou
   **mesclar** (ex.: cenas claras e escuras alternadas, cartões claros sobre fundo azul).
-- **Letras:** Manrope (texto) + Cormorant Garamond (destaques). Legíveis, nada enfeitado.
+- **Letras (três, para não ficar tudo igual):** Manrope = legenda · Cormorant Garamond = destaques da
+  legenda, palavras flutuantes e texto grande · **Josefin Sans = palavras dentro das animações**
+  (`fontes.animacao`). Legíveis, nada enfeitado.
 - Sem mascote. Movimentos suaves (`SUAVE` em `marca.ts`), nunca tremidos ou elásticos.
 
 ## Referências
@@ -130,6 +140,11 @@ Formato: `AAAA-MM-DD — regra — (vídeo de origem)`
 - 2026-10-15 — Nome com acento: Valéria. — (5-eixos)
 - 2026-10-15 — O Diogo pode colocar a música depois: sem faixa do Artlist, entregar sem música (só os efeitos). — (5-eixos)
 - 2026-10-15 — Sem efeitos sonoros nas palavras e transições. Música com leve batida, um pouco mais animada, sem ser dançante, sofisticada; volume um pouco mais alto (~0,18). — (5-eixos v2)
+- 2026-10-15 — Palavras flutuantes maiores que a legenda, primeira letra maiúscula, sombra leve com espessura (efeito 3D). — (proposito)
+- 2026-10-15 — Palavras das animações em outra fonte (Josefin Sans), diferente da legenda e das flutuantes. — (proposito)
+- 2026-10-15 — Tela dividida 40% animação / 60% pessoa (não precisa ser 50/50). — (proposito)
+- 2026-10-15 — Transições e animações mais artísticas em pontos estratégicos; mais grafismos conectando palavras, quadros e gráficos. — (proposito)
+- 2026-10-15 — Gaguejos podem ser cortados, como os silêncios. — (proposito)
 - 2026-10-15 — Repetição/tropeço na fala pode ser cortado. Antes, confira se a repetição existe mesmo: o Whisper às vezes duplica palavras na emenda dos pedaços. — (5-eixos)
 
 ### Herdadas do editor do Diogo (valem até a Valéria dizer o contrário)

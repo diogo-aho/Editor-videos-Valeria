@@ -4,6 +4,7 @@ import { useArea } from "./area";
 import { fontes, paleta, SUAVE, type Clima, type Tema } from "../marca";
 import { Aroma, Escrita, Filme, Grafirmaliza, PortasSensoriais, Vinil } from "./eixoz";
 import { Chama, Eixos, Infinito, Perguntas, Problemas } from "./valeria";
+import { Camadas, Escada, Escolha, ExternoInterno, Fases, Montanha, MuitoMais, Obstaculos, Ranking } from "./proposito";
 
 // Animações feitas sob medida. Cada vídeo pode ganhar novas: crie aqui e registre em ANIMACOES.
 // Regra: nada de número ou dado inventado. Só o que a Valeria disse ou enviou.
@@ -71,7 +72,7 @@ const Transcricao: React.FC<PropsAnimacao> = ({ tema, clima, palavras = [] }) =>
             <span
               key={i}
               style={{
-                fontFamily: i % 2 ? fontes.destaque : fontes.texto,
+                fontFamily: i % 2 ? fontes.animacao : fontes.animacao,
                 fontStyle: i % 2 ? "italic" : "normal",
                 fontWeight: 600,
                 fontSize: (i % 2 ? 1.25 : 1) * height * 0.06,
@@ -112,4 +113,13 @@ export const ANIMACOES: Record<string, React.FC<PropsAnimacao>> = {
   problemas: Problemas,
   chama: Chama,
   perguntas: Perguntas,
+  ranking: Ranking,
+  montanha: Montanha,
+  fases: Fases,
+  escada: Escada,
+  externoInterno: ExternoInterno,
+  camadas: Camadas,
+  muitoMais: MuitoMais,
+  escolha: Escolha,
+  obstaculos: Obstaculos,
 };

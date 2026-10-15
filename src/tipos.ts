@@ -24,7 +24,9 @@ export type Zoom = { em: number; escala: number; ate?: number };
 
 // legenda: posição da legenda nesta cena (fração da altura) ou "esconder" (quando a animação já mostra a fala)
 // tema/clima: troca o tema só nesta cena (para revezar claro e escuro no mesmo vídeo)
-type Legendavel = { legenda?: number | "esconder"; tema?: Tema; clima?: Clima };
+// transicao: como esta cena entra (padrão "suave"; artísticas em pontos estratégicos)
+export type Transicao = "suave" | "luz" | "cortina" | "circulo" | "linha";
+type Legendavel = { legenda?: number | "esconder"; tema?: Tema; clima?: Clima; transicao?: Transicao };
 
 export type Cena = Legendavel &
   (
@@ -51,7 +53,11 @@ export type Sobreposicao =
   // Corrige com leveza algo que a Valeria falou errado (a legenda mantém o que ela disse).
   | { tipo: "correcao"; inicio: number; fim: number; errado: string; certo: string; nota?: string }
   // Só com números que a Valeria disse ou enviou. Nunca inventar.
-  | { tipo: "numero"; inicio: number; fim: number; valor: number; prefixo?: string; sufixo?: string; rotulo?: string };
+  | { tipo: "numero"; inicio: number; fim: number; valor: number; prefixo?: string; sufixo?: string; rotulo?: string }
+  // Linha curva que liga dois pontos (ex.: duas palavras flutuantes). de/para = [x, y] em fração do quadro.
+  // Ponta de uma flutuante: esquerda ≈ [0.075, y]; direita ≈ [0.89, y]. curva > 0 arqueia para cima.
+  | { tipo: "ligacao"; inicio: number; fim: number; de: [number, number]; para: [number, number]; curva?: number; controle?: [number, number] };
+  // NUNCA deixe a linha cruzar o rosto: de cima (0.15) para o peito (0.55) use controle ≈ [1.0, 0.1] (contorna pela direita)
 
 export type Musica = { arquivo: string; inicio: number; fim: number; volume?: number };
 export type Efeito = { arquivo: string; em: number; volume?: number };

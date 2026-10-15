@@ -1,0 +1,1725 @@
+{
+  "texto": "O Brasil hoje é o segundo país com maior índice de afastamento por questões de saúde mental porque as pessoas não estão vendo sentido naquilo que elas fazem. Quando eu era mais nova, eu achava que propósito era uma coisa que a gente colocava. E seria isso pro resto da vida. Era uma coisa muito grandiosa, era uma coisa inalcançável. E propósito não é, né? Propósito é aquilo que é importante para você naquele momento. E a gente muda o propósito em várias fases da vida, porque a gente atualiza quem a gente é. Nós somos ensinados né, a crescer, estudar, trabalhar e se aposentar. E aí com tudo que a gente aprende na sociedade, nos nossos pais, na escola, a gente vai criando o que o externo quer e não o que a gente quer. E isso acontece também dentro das empresas, porque a gente vai assumindo uma série de papéis, uma série de cargos, uma série de responsabilidades, e a gente vai se tornando aquilo que a gente faz e não aquilo que a gente é, de verdade. E por isso que chega num determinado momento, eu acho que isso está acontecendo muito agora, eu acho que a pandemia acelerou esse processo. Ela não causou, mas acelerou. Porque as pessoas começaram a entender que elas não são aquilo que elas fazem. Elas são muito mais daquilo que elas fazem. E por isso que começou a gerar essa falta de sentido, tanto é que o burnout é isso, né? O Brasil hoje é o segundo país com maior índice de afastamento por questões de saúde mental. Porque as pessoas não estão vendo sentido naquilo que elas fazem. Elas não estão fazendo aquilo que elas realmente amam, né? E não necessariamente você precisa amar, mas você precisa estar satisfeito pleno naquilo que você faz, porque dificuldade a gente vai encontrar. Não é fácil. Mesmo você gostando muito daquilo que você faz, a gente tem uma série de obstáculos. Eu acho que esses anos foram os anos que a gente mais enfrentou obstáculos na vida.",
+  "palavras": [
+    {
+      "palavra": "O",
+      "inicio": 0.06,
+      "fim": 0.24
+    },
+    {
+      "palavra": "Brasil",
+      "inicio": 0.24,
+      "fim": 0.6
+    },
+    {
+      "palavra": "hoje",
+      "inicio": 0.6,
+      "fim": 0.97
+    },
+    {
+      "palavra": "é",
+      "inicio": 0.97,
+      "fim": 1.15
+    },
+    {
+      "palavra": "o",
+      "inicio": 1.15,
+      "fim": 1.33
+    },
+    {
+      "palavra": "segundo",
+      "inicio": 1.33,
+      "fim": 1.87
+    },
+    {
+      "palavra": "país",
+      "inicio": 1.87,
+      "fim": 2.05
+    },
+    {
+      "palavra": "com",
+      "inicio": 2.05,
+      "fim": 2.24
+    },
+    {
+      "palavra": "maior",
+      "inicio": 2.24,
+      "fim": 2.42
+    },
+    {
+      "palavra": "índice",
+      "inicio": 2.42,
+      "fim": 2.96
+    },
+    {
+      "palavra": "de",
+      "inicio": 2.96,
+      "fim": 3.14
+    },
+    {
+      "palavra": "afastamento",
+      "inicio": 3.14,
+      "fim": 4.25
+    },
+    {
+      "palavra": "por",
+      "inicio": 4.25,
+      "fim": 4.43
+    },
+    {
+      "palavra": "questões",
+      "inicio": 4.43,
+      "fim": 4.79
+    },
+    {
+      "palavra": "de",
+      "inicio": 4.79,
+      "fim": 4.97
+    },
+    {
+      "palavra": "saúde",
+      "inicio": 4.97,
+      "fim": 5.34
+    },
+    {
+      "palavra": "mental",
+      "inicio": 5.34,
+      "fim": 5.7
+    },
+    {
+      "palavra": "porque",
+      "inicio": 6.2,
+      "fim": 6.46
+    },
+    {
+      "palavra": "as",
+      "inicio": 6.46,
+      "fim": 6.59
+    },
+    {
+      "palavra": "pessoas",
+      "inicio": 6.59,
+      "fim": 6.86
+    },
+    {
+      "palavra": "não",
+      "inicio": 6.86,
+      "fim": 6.99
+    },
+    {
+      "palavra": "estão",
+      "inicio": 6.99,
+      "fim": 7.25
+    },
+    {
+      "palavra": "vendo",
+      "inicio": 7.25,
+      "fim": 7.51
+    },
+    {
+      "palavra": "sentido",
+      "inicio": 7.51,
+      "fim": 7.9
+    },
+    {
+      "palavra": "naquilo",
+      "inicio": 7.91,
+      "fim": 8.3
+    },
+    {
+      "palavra": "que",
+      "inicio": 8.3,
+      "fim": 8.43
+    },
+    {
+      "palavra": "elas",
+      "inicio": 8.43,
+      "fim": 8.69
+    },
+    {
+      "palavra": "fazem.",
+      "inicio": 8.69,
+      "fim": 8.95
+    },
+    {
+      "palavra": "Quando",
+      "inicio": 8.95,
+      "fim": 9.22
+    },
+    {
+      "palavra": "eu",
+      "inicio": 9.22,
+      "fim": 9.61
+    },
+    {
+      "palavra": "era",
+      "inicio": 9.61,
+      "fim": 9.87
+    },
+    {
+      "palavra": "mais",
+      "inicio": 9.87,
+      "fim": 10.0
+    },
+    {
+      "palavra": "nova,",
+      "inicio": 10.0,
+      "fim": 10.5
+    },
+    {
+      "palavra": "eu",
+      "inicio": 10.5,
+      "fim": 10.63
+    },
+    {
+      "palavra": "achava",
+      "inicio": 10.63,
+      "fim": 11.03
+    },
+    {
+      "palavra": "que",
+      "inicio": 11.03,
+      "fim": 11.16
+    },
+    {
+      "palavra": "propósito",
+      "inicio": 11.16,
+      "fim": 11.8
+    },
+    {
+      "palavra": "era",
+      "inicio": 11.8,
+      "fim": 12.07
+    },
+    {
+      "palavra": "uma",
+      "inicio": 12.07,
+      "fim": 12.33
+    },
+    {
+      "palavra": "coisa",
+      "inicio": 12.33,
+      "fim": 12.59
+    },
+    {
+      "palavra": "que",
+      "inicio": 12.59,
+      "fim": 12.72
+    },
+    {
+      "palavra": "a",
+      "inicio": 12.72,
+      "fim": 12.85
+    },
+    {
+      "palavra": "gente",
+      "inicio": 12.85,
+      "fim": 13.12
+    },
+    {
+      "palavra": "colocava.",
+      "inicio": 13.12,
+      "fim": 13.64
+    },
+    {
+      "palavra": "E",
+      "inicio": 14.14,
+      "fim": 14.27
+    },
+    {
+      "palavra": "seria",
+      "inicio": 14.27,
+      "fim": 14.52
+    },
+    {
+      "palavra": "isso",
+      "inicio": 14.52,
+      "fim": 14.77
+    },
+    {
+      "palavra": "pro",
+      "inicio": 14.77,
+      "fim": 14.89
+    },
+    {
+      "palavra": "resto",
+      "inicio": 14.89,
+      "fim": 15.14
+    },
+    {
+      "palavra": "da",
+      "inicio": 15.14,
+      "fim": 15.27
+    },
+    {
+      "palavra": "vida.",
+      "inicio": 15.27,
+      "fim": 15.52
+    },
+    {
+      "palavra": "Era",
+      "inicio": 15.88,
+      "fim": 16.17
+    },
+    {
+      "palavra": "uma",
+      "inicio": 16.17,
+      "fim": 16.46
+    },
+    {
+      "palavra": "coisa",
+      "inicio": 16.46,
+      "fim": 16.75
+    },
+    {
+      "palavra": "muito",
+      "inicio": 16.75,
+      "fim": 17.04
+    },
+    {
+      "palavra": "grandiosa,",
+      "inicio": 17.04,
+      "fim": 17.47
+    },
+    {
+      "palavra": "era",
+      "inicio": 17.47,
+      "fim": 17.76
+    },
+    {
+      "palavra": "uma",
+      "inicio": 17.76,
+      "fim": 18.05
+    },
+    {
+      "palavra": "coisa",
+      "inicio": 18.05,
+      "fim": 18.34
+    },
+    {
+      "palavra": "inalcançável.",
+      "inicio": 18.34,
+      "fim": 19.07
+    },
+    {
+      "palavra": "E",
+      "inicio": 19.07,
+      "fim": 19.21
+    },
+    {
+      "palavra": "propósito",
+      "inicio": 19.21,
+      "fim": 19.79
+    },
+    {
+      "palavra": "não",
+      "inicio": 19.79,
+      "fim": 19.93
+    },
+    {
+      "palavra": "é,",
+      "inicio": 19.93,
+      "fim": 20.08
+    },
+    {
+      "palavra": "né?",
+      "inicio": 20.08,
+      "fim": 20.22
+    },
+    {
+      "palavra": "Propósito",
+      "inicio": 20.22,
+      "fim": 20.8
+    },
+    {
+      "palavra": "é",
+      "inicio": 20.8,
+      "fim": 20.95
+    },
+    {
+      "palavra": "aquilo",
+      "inicio": 20.95,
+      "fim": 21.38
+    },
+    {
+      "palavra": "que",
+      "inicio": 21.38,
+      "fim": 21.53
+    },
+    {
+      "palavra": "é",
+      "inicio": 21.53,
+      "fim": 21.67
+    },
+    {
+      "palavra": "importante",
+      "inicio": 21.67,
+      "fim": 22.25
+    },
+    {
+      "palavra": "para",
+      "inicio": 22.25,
+      "fim": 22.54
+    },
+    {
+      "palavra": "você",
+      "inicio": 22.54,
+      "fim": 22.83
+    },
+    {
+      "palavra": "naquele",
+      "inicio": 22.83,
+      "fim": 23.27
+    },
+    {
+      "palavra": "momento.",
+      "inicio": 23.27,
+      "fim": 23.7
+    },
+    {
+      "palavra": "E",
+      "inicio": 23.84,
+      "fim": 23.96
+    },
+    {
+      "palavra": "a",
+      "inicio": 23.96,
+      "fim": 24.08
+    },
+    {
+      "palavra": "gente",
+      "inicio": 24.08,
+      "fim": 24.33
+    },
+    {
+      "palavra": "muda",
+      "inicio": 24.33,
+      "fim": 24.57
+    },
+    {
+      "palavra": "o",
+      "inicio": 24.57,
+      "fim": 24.69
+    },
+    {
+      "palavra": "propósito",
+      "inicio": 24.69,
+      "fim": 25.18
+    },
+    {
+      "palavra": "em",
+      "inicio": 25.18,
+      "fim": 25.3
+    },
+    {
+      "palavra": "várias",
+      "inicio": 25.3,
+      "fim": 25.55
+    },
+    {
+      "palavra": "fases",
+      "inicio": 25.55,
+      "fim": 25.79
+    },
+    {
+      "palavra": "da",
+      "inicio": 25.79,
+      "fim": 25.91
+    },
+    {
+      "palavra": "vida,",
+      "inicio": 25.91,
+      "fim": 26.16
+    },
+    {
+      "palavra": "porque",
+      "inicio": 26.16,
+      "fim": 26.4
+    },
+    {
+      "palavra": "a",
+      "inicio": 26.4,
+      "fim": 26.52
+    },
+    {
+      "palavra": "gente",
+      "inicio": 26.52,
+      "fim": 26.77
+    },
+    {
+      "palavra": "atualiza",
+      "inicio": 26.77,
+      "fim": 27.26
+    },
+    {
+      "palavra": "quem",
+      "inicio": 27.26,
+      "fim": 27.38
+    },
+    {
+      "palavra": "a",
+      "inicio": 27.38,
+      "fim": 27.5
+    },
+    {
+      "palavra": "gente",
+      "inicio": 27.74,
+      "fim": 28.02
+    },
+    {
+      "palavra": "é.",
+      "inicio": 28.02,
+      "fim": 28.15
+    },
+    {
+      "palavra": "Nós",
+      "inicio": 27.7,
+      "fim": 27.95
+    },
+    {
+      "palavra": "somos",
+      "inicio": 27.95,
+      "fim": 28.3
+    },
+    {
+      "palavra": "ensinados",
+      "inicio": 28.3,
+      "fim": 29.2
+    },
+    {
+      "palavra": "né,",
+      "inicio": 29.55,
+      "fim": 29.85
+    },
+    {
+      "palavra": "a",
+      "inicio": 29.9,
+      "fim": 30.2
+    },
+    {
+      "palavra": "crescer,",
+      "inicio": 30.55,
+      "fim": 31.05
+    },
+    {
+      "palavra": "estudar,",
+      "inicio": 31.6,
+      "fim": 32.2
+    },
+    {
+      "palavra": "trabalhar",
+      "inicio": 32.6,
+      "fim": 33.3
+    },
+    {
+      "palavra": "e",
+      "inicio": 33.65,
+      "fim": 33.8
+    },
+    {
+      "palavra": "se",
+      "inicio": 33.8,
+      "fim": 33.95
+    },
+    {
+      "palavra": "aposentar.",
+      "inicio": 33.95,
+      "fim": 34.5
+    },
+    {
+      "palavra": "E",
+      "inicio": 33.9,
+      "fim": 34.08
+    },
+    {
+      "palavra": "aí",
+      "inicio": 34.08,
+      "fim": 34.25
+    },
+    {
+      "palavra": "com",
+      "inicio": 34.25,
+      "fim": 34.43
+    },
+    {
+      "palavra": "tudo",
+      "inicio": 34.43,
+      "fim": 34.95
+    },
+    {
+      "palavra": "que",
+      "inicio": 34.95,
+      "fim": 35.12
+    },
+    {
+      "palavra": "a",
+      "inicio": 35.12,
+      "fim": 35.3
+    },
+    {
+      "palavra": "gente",
+      "inicio": 35.3,
+      "fim": 35.66
+    },
+    {
+      "palavra": "aprende",
+      "inicio": 35.66,
+      "fim": 36.19
+    },
+    {
+      "palavra": "na",
+      "inicio": 36.19,
+      "fim": 36.36
+    },
+    {
+      "palavra": "sociedade,",
+      "inicio": 36.37,
+      "fim": 37.38
+    },
+    {
+      "palavra": "nos",
+      "inicio": 37.38,
+      "fim": 37.55
+    },
+    {
+      "palavra": "nossos",
+      "inicio": 37.55,
+      "fim": 37.91
+    },
+    {
+      "palavra": "pais,",
+      "inicio": 37.91,
+      "fim": 38.08
+    },
+    {
+      "palavra": "na",
+      "inicio": 38.09,
+      "fim": 38.68
+    },
+    {
+      "palavra": "escola,",
+      "inicio": 38.68,
+      "fim": 39.22
+    },
+    {
+      "palavra": "a",
+      "inicio": 39.22,
+      "fim": 39.39
+    },
+    {
+      "palavra": "gente",
+      "inicio": 39.39,
+      "fim": 39.75
+    },
+    {
+      "palavra": "vai",
+      "inicio": 39.75,
+      "fim": 39.92
+    },
+    {
+      "palavra": "criando",
+      "inicio": 39.93,
+      "fim": 40.28
+    },
+    {
+      "palavra": "o",
+      "inicio": 40.78,
+      "fim": 40.92
+    },
+    {
+      "palavra": "que",
+      "inicio": 40.92,
+      "fim": 41.06
+    },
+    {
+      "palavra": "o",
+      "inicio": 41.06,
+      "fim": 41.2
+    },
+    {
+      "palavra": "externo",
+      "inicio": 41.2,
+      "fim": 41.97
+    },
+    {
+      "palavra": "quer",
+      "inicio": 41.97,
+      "fim": 42.11
+    },
+    {
+      "palavra": "e",
+      "inicio": 42.11,
+      "fim": 42.25
+    },
+    {
+      "palavra": "não",
+      "inicio": 42.25,
+      "fim": 42.39
+    },
+    {
+      "palavra": "o",
+      "inicio": 42.39,
+      "fim": 42.65
+    },
+    {
+      "palavra": "que",
+      "inicio": 42.65,
+      "fim": 42.79
+    },
+    {
+      "palavra": "a",
+      "inicio": 42.79,
+      "fim": 42.92
+    },
+    {
+      "palavra": "gente",
+      "inicio": 42.92,
+      "fim": 43.2
+    },
+    {
+      "palavra": "quer.",
+      "inicio": 43.2,
+      "fim": 43.34
+    },
+    {
+      "palavra": "E",
+      "inicio": 43.8,
+      "fim": 43.92
+    },
+    {
+      "palavra": "isso",
+      "inicio": 43.92,
+      "fim": 44.17
+    },
+    {
+      "palavra": "acontece",
+      "inicio": 44.17,
+      "fim": 44.66
+    },
+    {
+      "palavra": "também",
+      "inicio": 44.66,
+      "fim": 44.91
+    },
+    {
+      "palavra": "dentro",
+      "inicio": 44.91,
+      "fim": 45.16
+    },
+    {
+      "palavra": "das",
+      "inicio": 45.16,
+      "fim": 45.28
+    },
+    {
+      "palavra": "empresas,",
+      "inicio": 45.28,
+      "fim": 45.65
+    },
+    {
+      "palavra": "porque",
+      "inicio": 45.65,
+      "fim": 45.9
+    },
+    {
+      "palavra": "a",
+      "inicio": 45.9,
+      "fim": 46.02
+    },
+    {
+      "palavra": "gente",
+      "inicio": 46.02,
+      "fim": 46.27
+    },
+    {
+      "palavra": "vai",
+      "inicio": 46.27,
+      "fim": 46.39
+    },
+    {
+      "palavra": "assumindo",
+      "inicio": 46.39,
+      "fim": 47.1
+    },
+    {
+      "palavra": "uma",
+      "inicio": 47.1,
+      "fim": 47.35
+    },
+    {
+      "palavra": "série",
+      "inicio": 47.35,
+      "fim": 47.6
+    },
+    {
+      "palavra": "de",
+      "inicio": 47.6,
+      "fim": 47.72
+    },
+    {
+      "palavra": "papéis,",
+      "inicio": 47.72,
+      "fim": 48.21
+    },
+    {
+      "palavra": "uma",
+      "inicio": 48.21,
+      "fim": 48.45
+    },
+    {
+      "palavra": "série",
+      "inicio": 48.45,
+      "fim": 48.7
+    },
+    {
+      "palavra": "de",
+      "inicio": 48.7,
+      "fim": 48.82
+    },
+    {
+      "palavra": "cargos,",
+      "inicio": 48.82,
+      "fim": 49.07
+    },
+    {
+      "palavra": "uma",
+      "inicio": 49.07,
+      "fim": 49.32
+    },
+    {
+      "palavra": "série",
+      "inicio": 49.32,
+      "fim": 49.56
+    },
+    {
+      "palavra": "de",
+      "inicio": 49.56,
+      "fim": 49.69
+    },
+    {
+      "palavra": "responsabilidades,",
+      "inicio": 49.69,
+      "fim": 50.55
+    },
+    {
+      "palavra": "e",
+      "inicio": 50.55,
+      "fim": 50.67
+    },
+    {
+      "palavra": "a",
+      "inicio": 50.67,
+      "fim": 50.8
+    },
+    {
+      "palavra": "gente",
+      "inicio": 50.8,
+      "fim": 51.04
+    },
+    {
+      "palavra": "vai",
+      "inicio": 51.04,
+      "fim": 51.17
+    },
+    {
+      "palavra": "se",
+      "inicio": 51.17,
+      "fim": 51.29
+    },
+    {
+      "palavra": "tornando",
+      "inicio": 51.29,
+      "fim": 51.66
+    },
+    {
+      "palavra": "aquilo",
+      "inicio": 52.08,
+      "fim": 52.42
+    },
+    {
+      "palavra": "que",
+      "inicio": 52.42,
+      "fim": 52.53
+    },
+    {
+      "palavra": "a",
+      "inicio": 52.53,
+      "fim": 52.64
+    },
+    {
+      "palavra": "gente",
+      "inicio": 52.64,
+      "fim": 52.87
+    },
+    {
+      "palavra": "faz",
+      "inicio": 52.87,
+      "fim": 52.98
+    },
+    {
+      "palavra": "e",
+      "inicio": 52.98,
+      "fim": 53.37
+    },
+    {
+      "palavra": "não",
+      "inicio": 53.37,
+      "fim": 53.48
+    },
+    {
+      "palavra": "aquilo",
+      "inicio": 53.48,
+      "fim": 53.82
+    },
+    {
+      "palavra": "que",
+      "inicio": 53.82,
+      "fim": 53.93
+    },
+    {
+      "palavra": "a",
+      "inicio": 53.93,
+      "fim": 54.04
+    },
+    {
+      "palavra": "gente",
+      "inicio": 54.04,
+      "fim": 54.27
+    },
+    {
+      "palavra": "é,",
+      "inicio": 54.27,
+      "fim": 54.64
+    },
+    {
+      "palavra": "de",
+      "inicio": 54.64,
+      "fim": 54.75
+    },
+    {
+      "palavra": "verdade.",
+      "inicio": 54.75,
+      "fim": 55.09
+    },
+    {
+      "palavra": "E",
+      "inicio": 55.09,
+      "fim": 55.2
+    },
+    {
+      "palavra": "por",
+      "inicio": 55.2,
+      "fim": 55.66
+    },
+    {
+      "palavra": "isso",
+      "inicio": 55.66,
+      "fim": 55.88
+    },
+    {
+      "palavra": "que",
+      "inicio": 55.88,
+      "fim": 55.99
+    },
+    {
+      "palavra": "chega",
+      "inicio": 55.99,
+      "fim": 56.22
+    },
+    {
+      "palavra": "num",
+      "inicio": 56.22,
+      "fim": 56.33
+    },
+    {
+      "palavra": "determinado",
+      "inicio": 56.33,
+      "fim": 56.89
+    },
+    {
+      "palavra": "momento,",
+      "inicio": 56.89,
+      "fim": 57.23
+    },
+    {
+      "palavra": "eu",
+      "inicio": 57.23,
+      "fim": 57.34
+    },
+    {
+      "palavra": "acho",
+      "inicio": 57.34,
+      "fim": 57.57
+    },
+    {
+      "palavra": "que",
+      "inicio": 57.57,
+      "fim": 57.68
+    },
+    {
+      "palavra": "isso",
+      "inicio": 57.68,
+      "fim": 57.9
+    },
+    {
+      "palavra": "está",
+      "inicio": 57.9,
+      "fim": 58.13
+    },
+    {
+      "palavra": "acontecendo",
+      "inicio": 58.13,
+      "fim": 59.07
+    },
+    {
+      "palavra": "muito",
+      "inicio": 59.07,
+      "fim": 59.29
+    },
+    {
+      "palavra": "agora,",
+      "inicio": 59.29,
+      "fim": 59.63
+    },
+    {
+      "palavra": "eu",
+      "inicio": 59.63,
+      "fim": 59.74
+    },
+    {
+      "palavra": "acho",
+      "inicio": 59.74,
+      "fim": 59.97
+    },
+    {
+      "palavra": "que",
+      "inicio": 59.97,
+      "fim": 60.08
+    },
+    {
+      "palavra": "a",
+      "inicio": 60.08,
+      "fim": 60.19
+    },
+    {
+      "palavra": "pandemia",
+      "inicio": 60.19,
+      "fim": 60.53
+    },
+    {
+      "palavra": "acelerou",
+      "inicio": 60.53,
+      "fim": 60.98
+    },
+    {
+      "palavra": "esse",
+      "inicio": 60.98,
+      "fim": 61.2
+    },
+    {
+      "palavra": "processo.",
+      "inicio": 61.2,
+      "fim": 61.54
+    },
+    {
+      "palavra": "Ela",
+      "inicio": 62.04,
+      "fim": 62.32
+    },
+    {
+      "palavra": "não",
+      "inicio": 62.32,
+      "fim": 62.46
+    },
+    {
+      "palavra": "causou,",
+      "inicio": 62.46,
+      "fim": 62.74
+    },
+    {
+      "palavra": "mas",
+      "inicio": 62.74,
+      "fim": 62.88
+    },
+    {
+      "palavra": "acelerou.",
+      "inicio": 62.88,
+      "fim": 63.69
+    },
+    {
+      "palavra": "Porque",
+      "inicio": 63.69,
+      "fim": 63.97
+    },
+    {
+      "palavra": "as",
+      "inicio": 63.97,
+      "fim": 64.47
+    },
+    {
+      "palavra": "pessoas",
+      "inicio": 64.47,
+      "fim": 64.75
+    },
+    {
+      "palavra": "começaram",
+      "inicio": 64.75,
+      "fim": 65.31
+    },
+    {
+      "palavra": "a",
+      "inicio": 65.31,
+      "fim": 65.45
+    },
+    {
+      "palavra": "entender",
+      "inicio": 65.45,
+      "fim": 65.87
+    },
+    {
+      "palavra": "que",
+      "inicio": 65.87,
+      "fim": 66.01
+    },
+    {
+      "palavra": "elas",
+      "inicio": 66.01,
+      "fim": 66.29
+    },
+    {
+      "palavra": "não",
+      "inicio": 66.29,
+      "fim": 66.64
+    },
+    {
+      "palavra": "são",
+      "inicio": 66.64,
+      "fim": 66.78
+    },
+    {
+      "palavra": "aquilo",
+      "inicio": 66.78,
+      "fim": 67.2
+    },
+    {
+      "palavra": "que",
+      "inicio": 67.2,
+      "fim": 67.34
+    },
+    {
+      "palavra": "elas",
+      "inicio": 67.34,
+      "fim": 67.62
+    },
+    {
+      "palavra": "fazem.",
+      "inicio": 67.62,
+      "fim": 67.9
+    },
+    {
+      "palavra": "Elas",
+      "inicio": 68.34,
+      "fim": 68.55
+    },
+    {
+      "palavra": "são",
+      "inicio": 68.55,
+      "fim": 68.66
+    },
+    {
+      "palavra": "muito",
+      "inicio": 68.66,
+      "fim": 68.88
+    },
+    {
+      "palavra": "mais",
+      "inicio": 68.88,
+      "fim": 68.98
+    },
+    {
+      "palavra": "daquilo",
+      "inicio": 68.98,
+      "fim": 69.56
+    },
+    {
+      "palavra": "que",
+      "inicio": 69.56,
+      "fim": 69.67
+    },
+    {
+      "palavra": "elas",
+      "inicio": 69.67,
+      "fim": 69.89
+    },
+    {
+      "palavra": "fazem.",
+      "inicio": 69.89,
+      "fim": 70.1
+    },
+    {
+      "palavra": "E",
+      "inicio": 70.46,
+      "fim": 70.61
+    },
+    {
+      "palavra": "por",
+      "inicio": 70.61,
+      "fim": 70.76
+    },
+    {
+      "palavra": "isso",
+      "inicio": 70.76,
+      "fim": 71.05
+    },
+    {
+      "palavra": "que",
+      "inicio": 71.05,
+      "fim": 71.2
+    },
+    {
+      "palavra": "começou",
+      "inicio": 71.2,
+      "fim": 71.64
+    },
+    {
+      "palavra": "a",
+      "inicio": 71.64,
+      "fim": 71.79
+    },
+    {
+      "palavra": "gerar",
+      "inicio": 71.79,
+      "fim": 72.09
+    },
+    {
+      "palavra": "essa",
+      "inicio": 72.09,
+      "fim": 72.39
+    },
+    {
+      "palavra": "falta",
+      "inicio": 72.39,
+      "fim": 72.68
+    },
+    {
+      "palavra": "de",
+      "inicio": 72.68,
+      "fim": 72.83
+    },
+    {
+      "palavra": "sentido,",
+      "inicio": 72.83,
+      "fim": 73.27
+    },
+    {
+      "palavra": "tanto",
+      "inicio": 73.27,
+      "fim": 73.57
+    },
+    {
+      "palavra": "é",
+      "inicio": 73.57,
+      "fim": 73.72
+    },
+    {
+      "palavra": "que",
+      "inicio": 73.72,
+      "fim": 74.19
+    },
+    {
+      "palavra": "o",
+      "inicio": 74.19,
+      "fim": 74.33
+    },
+    {
+      "palavra": "burnout",
+      "inicio": 74.33,
+      "fim": 74.63
+    },
+    {
+      "palavra": "é",
+      "inicio": 74.63,
+      "fim": 74.78
+    },
+    {
+      "palavra": "isso,",
+      "inicio": 74.78,
+      "fim": 75.07
+    },
+    {
+      "palavra": "né?",
+      "inicio": 75.07,
+      "fim": 75.22
+    },
+    {
+      "palavra": "O",
+      "inicio": 75.22,
+      "fim": 75.65
+    },
+    {
+      "palavra": "Brasil",
+      "inicio": 75.65,
+      "fim": 75.95
+    },
+    {
+      "palavra": "hoje",
+      "inicio": 75.95,
+      "fim": 76.24
+    },
+    {
+      "palavra": "é",
+      "inicio": 76.24,
+      "fim": 76.39
+    },
+    {
+      "palavra": "o",
+      "inicio": 76.39,
+      "fim": 76.54
+    },
+    {
+      "palavra": "segundo",
+      "inicio": 76.54,
+      "fim": 76.98
+    },
+    {
+      "palavra": "país",
+      "inicio": 76.98,
+      "fim": 77.13
+    },
+    {
+      "palavra": "com",
+      "inicio": 77.13,
+      "fim": 77.28
+    },
+    {
+      "palavra": "maior",
+      "inicio": 77.28,
+      "fim": 77.43
+    },
+    {
+      "palavra": "índice",
+      "inicio": 77.43,
+      "fim": 77.87
+    },
+    {
+      "palavra": "de",
+      "inicio": 77.87,
+      "fim": 78.02
+    },
+    {
+      "palavra": "afastamento",
+      "inicio": 78.02,
+      "fim": 78.88
+    },
+    {
+      "palavra": "por",
+      "inicio": 79.22,
+      "fim": 79.46
+    },
+    {
+      "palavra": "questões",
+      "inicio": 79.47,
+      "fim": 79.96
+    },
+    {
+      "palavra": "de",
+      "inicio": 79.96,
+      "fim": 80.2
+    },
+    {
+      "palavra": "saúde",
+      "inicio": 80.2,
+      "fim": 80.69
+    },
+    {
+      "palavra": "mental.",
+      "inicio": 80.69,
+      "fim": 81.18
+    },
+    {
+      "palavra": "Porque",
+      "inicio": 81.7,
+      "fim": 81.99
+    },
+    {
+      "palavra": "as",
+      "inicio": 81.99,
+      "fim": 82.14
+    },
+    {
+      "palavra": "pessoas",
+      "inicio": 82.14,
+      "fim": 82.43
+    },
+    {
+      "palavra": "não",
+      "inicio": 82.43,
+      "fim": 82.58
+    },
+    {
+      "palavra": "estão",
+      "inicio": 82.58,
+      "fim": 82.87
+    },
+    {
+      "palavra": "vendo",
+      "inicio": 82.87,
+      "fim": 83.17
+    },
+    {
+      "palavra": "sentido",
+      "inicio": 83.17,
+      "fim": 83.61
+    },
+    {
+      "palavra": "naquilo",
+      "inicio": 83.61,
+      "fim": 84.05
+    },
+    {
+      "palavra": "que",
+      "inicio": 84.05,
+      "fim": 84.19
+    },
+    {
+      "palavra": "elas",
+      "inicio": 84.19,
+      "fim": 84.49
+    },
+    {
+      "palavra": "fazem.",
+      "inicio": 84.49,
+      "fim": 84.78
+    },
+    {
+      "palavra": "Elas",
+      "inicio": 85.28,
+      "fim": 85.54
+    },
+    {
+      "palavra": "não",
+      "inicio": 85.54,
+      "fim": 85.67
+    },
+    {
+      "palavra": "estão",
+      "inicio": 85.67,
+      "fim": 85.93
+    },
+    {
+      "palavra": "fazendo",
+      "inicio": 85.93,
+      "fim": 86.33
+    },
+    {
+      "palavra": "aquilo",
+      "inicio": 86.33,
+      "fim": 86.72
+    },
+    {
+      "palavra": "que",
+      "inicio": 86.72,
+      "fim": 86.85
+    },
+    {
+      "palavra": "elas",
+      "inicio": 86.85,
+      "fim": 87.11
+    },
+    {
+      "palavra": "realmente",
+      "inicio": 87.11,
+      "fim": 87.98
+    },
+    {
+      "palavra": "amam,",
+      "inicio": 87.98,
+      "fim": 88.42
+    },
+    {
+      "palavra": "né?",
+      "inicio": 88.42,
+      "fim": 88.55
+    },
+    {
+      "palavra": "E",
+      "inicio": 88.55,
+      "fim": 88.68
+    },
+    {
+      "palavra": "não",
+      "inicio": 88.68,
+      "fim": 88.81
+    },
+    {
+      "palavra": "necessariamente",
+      "inicio": 88.81,
+      "fim": 89.6
+    },
+    {
+      "palavra": "você",
+      "inicio": 89.6,
+      "fim": 90.06
+    },
+    {
+      "palavra": "precisa",
+      "inicio": 90.06,
+      "fim": 90.79
+    },
+    {
+      "palavra": "amar,",
+      "inicio": 90.79,
+      "fim": 91.05
+    },
+    {
+      "palavra": "mas",
+      "inicio": 91.05,
+      "fim": 91.18
+    },
+    {
+      "palavra": "você",
+      "inicio": 91.18,
+      "fim": 91.44
+    },
+    {
+      "palavra": "precisa",
+      "inicio": 91.44,
+      "fim": 92.02
+    },
+    {
+      "palavra": "estar",
+      "inicio": 92.02,
+      "fim": 92.62
+    },
+    {
+      "palavra": "satisfeito",
+      "inicio": 92.62,
+      "fim": 93.14
+    },
+    {
+      "palavra": "pleno",
+      "inicio": 93.5,
+      "fim": 93.83
+    },
+    {
+      "palavra": "naquilo",
+      "inicio": 93.83,
+      "fim": 94.47
+    },
+    {
+      "palavra": "que",
+      "inicio": 94.47,
+      "fim": 94.63
+    },
+    {
+      "palavra": "você",
+      "inicio": 94.63,
+      "fim": 94.96
+    },
+    {
+      "palavra": "faz,",
+      "inicio": 94.96,
+      "fim": 95.13
+    },
+    {
+      "palavra": "porque",
+      "inicio": 95.13,
+      "fim": 95.46
+    },
+    {
+      "palavra": "dificuldade",
+      "inicio": 95.46,
+      "fim": 96.28
+    },
+    {
+      "palavra": "a",
+      "inicio": 96.28,
+      "fim": 96.79
+    },
+    {
+      "palavra": "gente",
+      "inicio": 96.79,
+      "fim": 97.12
+    },
+    {
+      "palavra": "vai",
+      "inicio": 97.12,
+      "fim": 97.28
+    },
+    {
+      "palavra": "encontrar.",
+      "inicio": 97.28,
+      "fim": 98.14
+    },
+    {
+      "palavra": "Não",
+      "inicio": 98.14,
+      "fim": 98.3
+    },
+    {
+      "palavra": "é",
+      "inicio": 98.3,
+      "fim": 98.47
+    },
+    {
+      "palavra": "fácil.",
+      "inicio": 98.47,
+      "fim": 98.8
+    },
+    {
+      "palavra": "Mesmo",
+      "inicio": 98.8,
+      "fim": 99.13
+    },
+    {
+      "palavra": "você",
+      "inicio": 99.13,
+      "fim": 99.46
+    },
+    {
+      "palavra": "gostando",
+      "inicio": 99.46,
+      "fim": 99.95
+    },
+    {
+      "palavra": "muito",
+      "inicio": 99.95,
+      "fim": 100.28
+    },
+    {
+      "palavra": "daquilo",
+      "inicio": 100.28,
+      "fim": 100.78
+    },
+    {
+      "palavra": "que",
+      "inicio": 100.78,
+      "fim": 100.94
+    },
+    {
+      "palavra": "você",
+      "inicio": 100.94,
+      "fim": 101.27
+    },
+    {
+      "palavra": "faz,",
+      "inicio": 101.27,
+      "fim": 101.44
+    },
+    {
+      "palavra": "a",
+      "inicio": 101.82,
+      "fim": 101.94
+    },
+    {
+      "palavra": "gente",
+      "inicio": 101.94,
+      "fim": 102.19
+    },
+    {
+      "palavra": "tem",
+      "inicio": 102.19,
+      "fim": 102.32
+    },
+    {
+      "palavra": "uma",
+      "inicio": 102.32,
+      "fim": 102.57
+    },
+    {
+      "palavra": "série",
+      "inicio": 102.57,
+      "fim": 102.82
+    },
+    {
+      "palavra": "de",
+      "inicio": 102.82,
+      "fim": 102.94
+    },
+    {
+      "palavra": "obstáculos.",
+      "inicio": 102.94,
+      "fim": 103.66
+    },
+    {
+      "palavra": "Eu",
+      "inicio": 104.16,
+      "fim": 104.28
+    },
+    {
+      "palavra": "acho",
+      "inicio": 104.28,
+      "fim": 104.52
+    },
+    {
+      "palavra": "que",
+      "inicio": 104.52,
+      "fim": 104.64
+    },
+    {
+      "palavra": "esses",
+      "inicio": 104.64,
+      "fim": 104.88
+    },
+    {
+      "palavra": "anos",
+      "inicio": 104.88,
+      "fim": 105.12
+    },
+    {
+      "palavra": "foram",
+      "inicio": 105.12,
+      "fim": 105.8
+    },
+    {
+      "palavra": "os",
+      "inicio": 105.8,
+      "fim": 105.92
+    },
+    {
+      "palavra": "anos",
+      "inicio": 105.92,
+      "fim": 106.16
+    },
+    {
+      "palavra": "que",
+      "inicio": 106.16,
+      "fim": 106.28
+    },
+    {
+      "palavra": "a",
+      "inicio": 106.28,
+      "fim": 106.4
+    },
+    {
+      "palavra": "gente",
+      "inicio": 106.4,
+      "fim": 106.64
+    },
+    {
+      "palavra": "mais",
+      "inicio": 106.64,
+      "fim": 106.76
+    },
+    {
+      "palavra": "enfrentou",
+      "inicio": 106.76,
+      "fim": 107.12
+    },
+    {
+      "palavra": "obstáculos",
+      "inicio": 107.12,
+      "fim": 107.92
+    },
+    {
+      "palavra": "na",
+      "inicio": 107.92,
+      "fim": 108.04
+    },
+    {
+      "palavra": "vida.",
+      "inicio": 108.04,
+      "fim": 108.28
+    }
+  ]
+}

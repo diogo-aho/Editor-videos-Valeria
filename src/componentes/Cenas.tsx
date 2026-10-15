@@ -80,17 +80,20 @@ export const CenaDividida: React.FC<Comum & { cena: Extract<Cena, { tipo: "divid
   const t = useTempo() + inicioSeq;
   const orador = { ...oradorPadrao, ...cena.orador };
   const abre = suave(Math.min(1, Math.max(0, (t - cena.inicio) / 0.5)));
-  const metade: React.CSSProperties = horizontal
-    ? { width: "50%", height: "100%", position: "absolute", top: 0 }
-    : { width: "100%", height: "50%", position: "absolute", left: 0 };
+  // ilustração 40% / pessoa 60%
+  const ILUS = 0.4;
+  const parte = (frac: number): React.CSSProperties =>
+    horizontal
+      ? { width: `${frac * 100}%`, height: "100%", position: "absolute", top: 0 }
+      : { width: "100%", height: `${frac * 100}%`, position: "absolute", left: 0 };
   return (
     <AbsoluteFill style={{ background: paleta(tema, clima).fundo }}>
-      <div style={{ ...metade, ...(horizontal ? { left: 0 } : { top: 0 }), overflow: "hidden" }}>
-        <AreaAnimacao width={horizontal ? width / 2 : width} height={horizontal ? height : height / 2}>
+      <div style={{ ...parte(ILUS), ...(horizontal ? { left: 0 } : { top: 0 }), overflow: "hidden" }}>
+        <AreaAnimacao width={horizontal ? width * ILUS : width} height={horizontal ? height : height * ILUS}>
           <Ilustracao cena={cena} tema={tema} clima={clima} inicioSeq={inicioSeq} />
         </AreaAnimacao>
       </div>
-      <div style={{ ...metade, ...(horizontal ? { right: 0 } : { bottom: 0 }), overflow: "hidden" }}>
+      <div style={{ ...parte(1 - ILUS), ...(horizontal ? { right: 0 } : { bottom: 0 }), overflow: "hidden" }}>
         <Orador orador={orador} camada="fundo" inicioCena={inicioSeq} escala={1.02 + 0.03 * abre} />
         <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.25) 0%, transparent 30%)" }} />
       </div>
@@ -101,8 +104,8 @@ export const CenaDividida: React.FC<Comum & { cena: Extract<Cena, { tipo: "divid
           background: cores.terracota,
           opacity: 0.85,
           ...(horizontal
-            ? { left: "50%", top: 0, width: 2, height: `${abre * 100}%` }
-            : { top: "50%", left: `${50 - abre * 50}%`, height: 2, width: `${abre * 100}%` }),
+            ? { left: `${ILUS * 100}%`, top: 0, width: 2, height: `${abre * 100}%` }
+            : { top: `${ILUS * 100}%`, left: `${50 - abre * 50}%`, height: 2, width: `${abre * 100}%` }),
         }}
       />
     </AbsoluteFill>

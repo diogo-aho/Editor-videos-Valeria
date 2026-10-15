@@ -58,7 +58,7 @@ export const Grafirmaliza: React.FC<PropsAnimacao> = ({ tema, clima, tempos = [0
   const medidas = React.useMemo(() => {
     const w = (text: string, fontFamily: string, fontSize: number, fontWeight: string) =>
       text ? measureText({ text, fontFamily, fontSize, fontWeight }).width : 0;
-    const slots = PARTES.map((p) => w(p.silaba, fontes.destaque, N, "600"));
+    const slots = PARTES.map((p) => w(p.silaba, fontes.animacao, N, "600"));
     const total = slots.reduce((a, b) => a + b, 0);
     let x = width / 2 - total / 2;
     const xSlot = slots.map((s) => {
@@ -67,9 +67,9 @@ export const Grafirmaliza: React.FC<PropsAnimacao> = ({ tema, clima, tempos = [0
       return atual;
     });
     const palavras = PARTES.map((p) => {
-      const a = w(p.antes, fontes.texto, S, "500");
-      const s = w(p.silaba, fontes.destaque, S2, "700");
-      const d = w(p.depois, fontes.texto, S, "500");
+      const a = w(p.antes, fontes.animacao, S, "500");
+      const s = w(p.silaba, fontes.animacao, S2, "700");
+      const d = w(p.depois, fontes.animacao, S, "500");
       const inicio = width / 2 - (a + s + d) / 2;
       return { inicio, xSilaba: inicio + a, a, s };
     });
@@ -86,12 +86,12 @@ export const Grafirmaliza: React.FC<PropsAnimacao> = ({ tema, clima, tempos = [0
     <AbsoluteFill>
       <Fundo cor={c.fundo} brilho={c.brilho} y="35%" />
       {/* rótulo */}
-      <div style={{ position: "absolute", top: yNome - N * 0.95, width: "100%", textAlign: "center", fontFamily: fontes.texto, fontWeight: 600, fontSize: base * 0.028, letterSpacing: "0.45em", color: c.textoSuave, opacity: aparece }}>
+      <div style={{ position: "absolute", top: yNome - N * 0.95, width: "100%", textAlign: "center", fontFamily: fontes.animacao, fontWeight: 600, fontSize: base * 0.028, letterSpacing: "0.45em", color: c.textoSuave, opacity: aparece }}>
         RITUAL DIÁRIO
       </div>
       {/* contorno fantasma do nome, esperando as sílabas */}
       {PARTES.map((p, i) => (
-        <div key={`g${i}`} style={{ position: "absolute", left: medidas.xSlot[i], top: yNome - N * 0.6, fontFamily: fontes.destaque, fontWeight: 600, fontSize: N, lineHeight: 1.2, color: "transparent", WebkitTextStroke: `1px ${rgba.offWhite(0.28 * aparece)}` }}>
+        <div key={`g${i}`} style={{ position: "absolute", left: medidas.xSlot[i], top: yNome - N * 0.6, fontFamily: fontes.animacao, fontWeight: 600, fontSize: N, lineHeight: 1.2, color: "transparent", WebkitTextStroke: `1px ${rgba.offWhite(0.28 * aparece)}` }}>
           {p.silaba}
         </div>
       ))}
@@ -102,9 +102,9 @@ export const Grafirmaliza: React.FC<PropsAnimacao> = ({ tema, clima, tempos = [0
         const saiu = prog(t, tPartes[i] + 0.35, 0.3);
         return (
           <div key={`p${i}`} style={{ position: "absolute", left: m.inicio, top: yPalavra(i) - S2 * 0.6, opacity: v, transform: `translateY(${(1 - v) * 24}px)`, whiteSpace: "nowrap", lineHeight: 1.2 }}>
-            <span style={{ fontFamily: fontes.texto, fontWeight: 500, fontSize: S, color: c.textoSuave }}>{p.antes}</span>
-            <span style={{ fontFamily: fontes.destaque, fontStyle: "italic", fontWeight: 700, fontSize: S2, color: cores.terracota, opacity: 1 - 0.7 * saiu }}>{p.silaba}</span>
-            <span style={{ fontFamily: fontes.texto, fontWeight: 500, fontSize: S, color: c.textoSuave }}>{p.depois}</span>
+            <span style={{ fontFamily: fontes.animacao, fontWeight: 500, fontSize: S, color: c.textoSuave }}>{p.antes}</span>
+            <span style={{ fontFamily: fontes.animacao, fontStyle: "italic", fontWeight: 700, fontSize: S2, color: cores.terracota, opacity: 1 - 0.7 * saiu }}>{p.silaba}</span>
+            <span style={{ fontFamily: fontes.animacao, fontWeight: 500, fontSize: S, color: c.textoSuave }}>{p.depois}</span>
           </div>
         );
       })}
@@ -125,7 +125,7 @@ export const Grafirmaliza: React.FC<PropsAnimacao> = ({ tema, clima, tempos = [0
               position: "absolute",
               left: x + arco,
               top: yBase,
-              fontFamily: fontes.destaque,
+              fontFamily: fontes.animacao,
               fontStyle: voo < 0.6 ? "italic" : "normal",
               fontWeight: 600,
               fontSize: tam,
@@ -193,7 +193,7 @@ export const Escrita: React.FC<PropsAnimacao> = ({ tema, clima, tempos = [0.5, 3
           const check = prog(t, tRevisa + i * 0.35, 0.35);
           return (
             <React.Fragment key={i}>
-              <div style={{ position: "absolute", left: "17%", top: linhaY(i) - base * 0.045, fontFamily: fontes.destaque, fontStyle: "italic", fontWeight: 600, fontSize: base * 0.085, color: cores.azulProfundo, clipPath: `inset(-30% ${100 - escreve * 100}% -30% -5%)`, whiteSpace: "nowrap" }}>
+              <div style={{ position: "absolute", left: "17%", top: linhaY(i) - base * 0.045, fontFamily: fontes.animacao, fontStyle: "italic", fontWeight: 600, fontSize: base * 0.085, color: cores.azulProfundo, clipPath: `inset(-30% ${100 - escreve * 100}% -30% -5%)`, whiteSpace: "nowrap" }}>
                 {p}
               </div>
               {/* caneta que acompanha a escrita */}
@@ -267,7 +267,7 @@ export const Filme: React.FC<PropsAnimacao> = ({ tema, clima, tempos = [0, 2, 4]
             const v = prog(t, tPalavras + i * cada, 0.35) * (i === palavras.length - 1 ? 1 : 1 - prog(t, tPalavras + (i + 1) * cada - 0.2, 0.3));
             if (v <= 0) return null;
             return (
-              <div key={i} style={{ position: "absolute", fontFamily: fontes.destaque, fontStyle: "italic", fontWeight: 600, fontSize: base * 0.1, color: cores.offWhite, opacity: v, transform: `scale(${1.08 - 0.08 * v})`, filter: `blur(${(1 - v) * 6}px)`, letterSpacing: `${(1 - v) * 0.1}em` }}>
+              <div key={i} style={{ position: "absolute", fontFamily: fontes.animacao, fontStyle: "italic", fontWeight: 600, fontSize: base * 0.1, color: cores.offWhite, opacity: v, transform: `scale(${1.08 - 0.08 * v})`, filter: `blur(${(1 - v) * 6}px)`, letterSpacing: `${(1 - v) * 0.1}em` }}>
                 {p}
               </div>
             );
@@ -347,7 +347,7 @@ export const PortasSensoriais: React.FC<PropsAnimacao> = ({ tema, clima, tempos 
         })}
       </svg>
       <div style={{ position: "absolute", left: cx, top: cy, transform: `translate(-50%, -50%) scale(${pulso})`, width: raio * 0.95, height: raio * 0.95, borderRadius: "50%", border: `1.5px solid ${rgba.bege(0.3 + 0.5 * brilhoCentro)}`, background: `radial-gradient(circle, ${rgba.cacau(0.25 + 0.4 * brilhoCentro)} 0%, ${rgba.azulProfundo(0.95)} 75%)`, boxShadow: `0 0 ${50 * brilhoCentro}px ${rgba.terracota(0.25 * brilhoCentro)}`, display: "flex", alignItems: "center", justifyContent: "center", opacity: prog(t, t0, 0.6) }}>
-        <div style={{ fontFamily: fontes.destaque, fontStyle: "italic", fontWeight: 600, fontSize: base * 0.06, color: cores.offWhite }}>Subconsciente</div>
+        <div style={{ fontFamily: fontes.animacao, fontStyle: "italic", fontWeight: 600, fontSize: base * 0.06, color: cores.offWhite }}>Subconsciente</div>
       </div>
       {PORTAS.map(({ nome, Icone }, i) => {
         const { x, y } = pos(i);
@@ -359,7 +359,7 @@ export const PortasSensoriais: React.FC<PropsAnimacao> = ({ tema, clima, tempos 
             <div style={{ width: tam, height: tam, borderRadius: "50%", border: `1.5px solid ${a > 0.5 ? cores.terracota : rgba.bege(0.5)}`, background: rgba.cacau(0.35 * a), display: "flex", alignItems: "center", justifyContent: "center", boxShadow: `0 0 ${30 * a}px ${rgba.terracota(0.3 * a)}` }}>
               <Icone size={tam * 0.42} color={a > 0.5 ? cores.terracota : cores.bege} strokeWidth={1.4} />
             </div>
-            <div style={{ fontFamily: fontes.texto, fontWeight: 600, fontSize: base * 0.03, letterSpacing: "0.12em", textTransform: "uppercase", color: a > 0.5 ? cores.offWhite : cores.bege }}>{nome}</div>
+            <div style={{ fontFamily: fontes.animacao, fontWeight: 600, fontSize: base * 0.03, letterSpacing: "0.12em", textTransform: "uppercase", color: a > 0.5 ? cores.offWhite : cores.bege }}>{nome}</div>
           </div>
         );
       })}
@@ -404,7 +404,7 @@ export const Vinil: React.FC<PropsAnimacao> = ({ tema, clima, tempos = [1], pala
         </div>
       </div>
       {palavras[0] && (
-        <div style={{ position: "absolute", top: height * 0.08, left: "8%", right: "8%", textAlign: "center", fontFamily: fontes.destaque, fontStyle: "italic", fontWeight: 600, fontSize: base * 0.06, color: c.texto, opacity: texto, transform: `translateY(${(1 - texto) * 16}px)` }}>
+        <div style={{ position: "absolute", top: height * 0.08, left: "8%", right: "8%", textAlign: "center", fontFamily: fontes.animacao, fontStyle: "italic", fontWeight: 600, fontSize: base * 0.06, color: c.texto, opacity: texto, transform: `translateY(${(1 - texto) * 16}px)` }}>
           {palavras[0]}
         </div>
       )}

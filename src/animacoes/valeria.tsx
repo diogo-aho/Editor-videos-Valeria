@@ -140,13 +140,13 @@ export const Eixos: React.FC<PropsAnimacao> = ({ tema, clima, tempos = [], palav
               }}
             >
               {junta === 0 && (
-                <span style={{ fontFamily: fontes.texto, fontWeight: 600, fontSize: base * 0.034, letterSpacing: "0.2em", color: cores.terracota }}>
+                <span style={{ fontFamily: fontes.animacao, fontWeight: 600, fontSize: base * 0.034, letterSpacing: "0.2em", color: cores.terracota }}>
                   {String(i + 1).padStart(2, "0")}
                 </span>
               )}
               <span
                 style={{
-                  fontFamily: fontes.destaque,
+                  fontFamily: fontes.animacao,
                   fontStyle: eAtivo ? "italic" : "normal",
                   fontWeight: 600,
                   fontSize: junta > 0 ? base * 0.062 : base * (0.08 + 0.035 * ativoP),
@@ -212,7 +212,7 @@ export const Infinito: React.FC<PropsAnimacao> = ({ tema, clima, tempos = [], pa
               transform: `translate(-50%, -50%) translateY(${(1 - s) * 18}px)`,
               opacity: s,
               filter: s < 1 ? `blur(${(1 - s) * 6}px)` : undefined,
-              fontFamily: fontes.destaque,
+              fontFamily: fontes.animacao,
               fontStyle: "italic",
               fontWeight: 600,
               fontSize: base * (ultimo ? 0.1 : 0.066),
@@ -345,7 +345,7 @@ export const Perguntas: React.FC<PropsAnimacao> = ({ tema, clima, tempos = [], p
               left: width * 0.12,
               top: topo + i * passo,
               transform: "translateY(-50%)",
-              fontFamily: fontes.destaque,
+              fontFamily: fontes.animacao,
               fontStyle: "italic",
               fontWeight: 600,
               fontSize: tamanho,
