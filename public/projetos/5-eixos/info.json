@@ -1,0 +1,14 @@
+{
+  "arquivo": "projetos/5-eixos/fala.mp4",
+  "tem_video": true,
+  "hdr_convertido": false,
+  "duracao_original": 90.72,
+  "duracao": 90.73,
+  "fps": 30,
+  "trechos_mantidos": [
+    [
+      0.0,
+      90.72
+    ]
+  ]
+}
