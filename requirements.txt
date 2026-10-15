@@ -1,0 +1,9 @@
+sherpa-onnx
+soundfile
+numpy
+Pillow
+opencv-python-headless<5  # o 5.x removeu o detector de rosto Haar (que não precisa de modelo)
+imageio-ffmpeg
+gdown
+yt-dlp
+onnxruntime

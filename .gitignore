@@ -1,0 +1,10 @@
+node_modules/
+.venv/
+out/
+__pycache__/
+modelos/
+brutos/
+public/projetos/*/_tmp/
+public/projetos/*/fala.mp4
+public/projetos/*/frente.webm
+public/projetos/*/midia/

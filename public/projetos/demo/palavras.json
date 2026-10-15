@@ -1,0 +1,485 @@
+{
+  "texto": "Esse é o teste de gravação de áudio que eu estou fazendo para poder fazer a transcrição de quando eu estiver fazendo qualquer tipo de vídeo. Eu sou uma pessoa que fala um pouco rápido, então tem que pegar um pouco do jeito que eu falo para poder colocar a pontuação no lugar certo. Essa pretende é para conseguir falar um pouco mais devagar para as pessoas terem uma compreensão melhor. Eu costumo falar rápido porque minha cabeça pensa rápido. Então, estou trabalhando a minha comunicação. Vamos nessa que estou apenas começando. E é isso, bora.",
+  "palavras": [
+    {
+      "palavra": "Esse",
+      "inicio": 0.18,
+      "fim": 0.45
+    },
+    {
+      "palavra": "é",
+      "inicio": 0.45,
+      "fim": 0.58
+    },
+    {
+      "palavra": "o",
+      "inicio": 0.58,
+      "fim": 0.71
+    },
+    {
+      "palavra": "teste",
+      "inicio": 0.71,
+      "fim": 0.98
+    },
+    {
+      "palavra": "de",
+      "inicio": 0.98,
+      "fim": 1.11
+    },
+    {
+      "palavra": "gravação",
+      "inicio": 1.11,
+      "fim": 1.51
+    },
+    {
+      "palavra": "de",
+      "inicio": 1.51,
+      "fim": 1.65
+    },
+    {
+      "palavra": "áudio",
+      "inicio": 1.65,
+      "fim": 1.91
+    },
+    {
+      "palavra": "que",
+      "inicio": 1.91,
+      "fim": 2.05
+    },
+    {
+      "palavra": "eu",
+      "inicio": 2.05,
+      "fim": 2.18
+    },
+    {
+      "palavra": "estou",
+      "inicio": 2.18,
+      "fim": 2.45
+    },
+    {
+      "palavra": "fazendo",
+      "inicio": 2.45,
+      "fim": 2.97
+    },
+    {
+      "palavra": "para",
+      "inicio": 2.97,
+      "fim": 3.23
+    },
+    {
+      "palavra": "poder",
+      "inicio": 3.23,
+      "fim": 3.5
+    },
+    {
+      "palavra": "fazer",
+      "inicio": 3.5,
+      "fim": 3.77
+    },
+    {
+      "palavra": "a",
+      "inicio": 3.77,
+      "fim": 3.9
+    },
+    {
+      "palavra": "transcrição",
+      "inicio": 3.9,
+      "fim": 4.3
+    },
+    {
+      "palavra": "de",
+      "inicio": 4.78,
+      "fim": 4.88
+    },
+    {
+      "palavra": "quando",
+      "inicio": 4.88,
+      "fim": 5.09
+    },
+    {
+      "palavra": "eu",
+      "inicio": 5.09,
+      "fim": 5.2
+    },
+    {
+      "palavra": "estiver",
+      "inicio": 5.2,
+      "fim": 5.51
+    },
+    {
+      "palavra": "fazendo",
+      "inicio": 5.51,
+      "fim": 5.83
+    },
+    {
+      "palavra": "qualquer",
+      "inicio": 5.83,
+      "fim": 6.04
+    },
+    {
+      "palavra": "tipo",
+      "inicio": 6.04,
+      "fim": 6.24
+    },
+    {
+      "palavra": "de",
+      "inicio": 6.24,
+      "fim": 6.35
+    },
+    {
+      "palavra": "vídeo.",
+      "inicio": 6.35,
+      "fim": 6.56
+    },
+    {
+      "palavra": "Eu",
+      "inicio": 6.56,
+      "fim": 7.1
+    },
+    {
+      "palavra": "sou",
+      "inicio": 7.1,
+      "fim": 7.21
+    },
+    {
+      "palavra": "uma",
+      "inicio": 7.21,
+      "fim": 7.42
+    },
+    {
+      "palavra": "pessoa",
+      "inicio": 7.42,
+      "fim": 7.63
+    },
+    {
+      "palavra": "que",
+      "inicio": 7.63,
+      "fim": 7.73
+    },
+    {
+      "palavra": "fala",
+      "inicio": 7.73,
+      "fim": 7.94
+    },
+    {
+      "palavra": "um",
+      "inicio": 7.94,
+      "fim": 8.04
+    },
+    {
+      "palavra": "pouco",
+      "inicio": 8.04,
+      "fim": 8.25
+    },
+    {
+      "palavra": "rápido,",
+      "inicio": 8.25,
+      "fim": 8.57
+    },
+    {
+      "palavra": "então",
+      "inicio": 8.57,
+      "fim": 8.78
+    },
+    {
+      "palavra": "tem",
+      "inicio": 8.78,
+      "fim": 9.06
+    },
+    {
+      "palavra": "que",
+      "inicio": 9.06,
+      "fim": 9.16
+    },
+    {
+      "palavra": "pegar",
+      "inicio": 9.17,
+      "fim": 9.37
+    },
+    {
+      "palavra": "um",
+      "inicio": 9.37,
+      "fim": 9.48
+    },
+    {
+      "palavra": "pouco",
+      "inicio": 9.48,
+      "fim": 9.69
+    },
+    {
+      "palavra": "do",
+      "inicio": 9.69,
+      "fim": 9.79
+    },
+    {
+      "palavra": "jeito",
+      "inicio": 9.79,
+      "fim": 10.14
+    },
+    {
+      "palavra": "que",
+      "inicio": 10.14,
+      "fim": 10.25
+    },
+    {
+      "palavra": "eu",
+      "inicio": 10.25,
+      "fim": 10.35
+    },
+    {
+      "palavra": "falo",
+      "inicio": 10.35,
+      "fim": 10.56
+    },
+    {
+      "palavra": "para",
+      "inicio": 11.04,
+      "fim": 11.3
+    },
+    {
+      "palavra": "poder",
+      "inicio": 11.3,
+      "fim": 11.56
+    },
+    {
+      "palavra": "colocar",
+      "inicio": 11.56,
+      "fim": 12.12
+    },
+    {
+      "palavra": "a",
+      "inicio": 12.12,
+      "fim": 12.25
+    },
+    {
+      "palavra": "pontuação",
+      "inicio": 12.25,
+      "fim": 12.64
+    },
+    {
+      "palavra": "no",
+      "inicio": 12.64,
+      "fim": 12.77
+    },
+    {
+      "palavra": "lugar",
+      "inicio": 12.77,
+      "fim": 13.03
+    },
+    {
+      "palavra": "certo.",
+      "inicio": 13.03,
+      "fim": 13.29
+    },
+    {
+      "palavra": "Essa",
+      "inicio": 13.29,
+      "fim": 13.91
+    },
+    {
+      "palavra": "pretende",
+      "inicio": 13.91,
+      "fim": 14.31
+    },
+    {
+      "palavra": "é",
+      "inicio": 14.31,
+      "fim": 14.56
+    },
+    {
+      "palavra": "para",
+      "inicio": 14.56,
+      "fim": 14.82
+    },
+    {
+      "palavra": "conseguir",
+      "inicio": 14.82,
+      "fim": 15.21
+    },
+    {
+      "palavra": "falar",
+      "inicio": 15.21,
+      "fim": 15.47
+    },
+    {
+      "palavra": "um",
+      "inicio": 15.47,
+      "fim": 15.6
+    },
+    {
+      "palavra": "pouco",
+      "inicio": 15.6,
+      "fim": 15.87
+    },
+    {
+      "palavra": "mais",
+      "inicio": 15.87,
+      "fim": 16.0
+    },
+    {
+      "palavra": "devagar",
+      "inicio": 16.0,
+      "fim": 16.39
+    },
+    {
+      "palavra": "para",
+      "inicio": 16.39,
+      "fim": 16.65
+    },
+    {
+      "palavra": "as",
+      "inicio": 16.65,
+      "fim": 16.78
+    },
+    {
+      "palavra": "pessoas",
+      "inicio": 16.78,
+      "fim": 17.04
+    },
+    {
+      "palavra": "terem",
+      "inicio": 17.04,
+      "fim": 17.3
+    },
+    {
+      "palavra": "uma",
+      "inicio": 17.3,
+      "fim": 17.57
+    },
+    {
+      "palavra": "compreensão",
+      "inicio": 17.57,
+      "fim": 17.96
+    },
+    {
+      "palavra": "melhor.",
+      "inicio": 17.96,
+      "fim": 18.22
+    },
+    {
+      "palavra": "Eu",
+      "inicio": 18.76,
+      "fim": 18.88
+    },
+    {
+      "palavra": "costumo",
+      "inicio": 18.88,
+      "fim": 19.22
+    },
+    {
+      "palavra": "falar",
+      "inicio": 19.22,
+      "fim": 19.46
+    },
+    {
+      "palavra": "rápido",
+      "inicio": 19.46,
+      "fim": 20.21
+    },
+    {
+      "palavra": "porque",
+      "inicio": 20.21,
+      "fim": 20.44
+    },
+    {
+      "palavra": "minha",
+      "inicio": 20.44,
+      "fim": 20.67
+    },
+    {
+      "palavra": "cabeça",
+      "inicio": 20.67,
+      "fim": 21.26
+    },
+    {
+      "palavra": "pensa",
+      "inicio": 21.26,
+      "fim": 21.69
+    },
+    {
+      "palavra": "rápido.",
+      "inicio": 21.69,
+      "fim": 22.04
+    },
+    {
+      "palavra": "Então,",
+      "inicio": 22.52,
+      "fim": 22.82
+    },
+    {
+      "palavra": "estou",
+      "inicio": 22.82,
+      "fim": 23.11
+    },
+    {
+      "palavra": "trabalhando",
+      "inicio": 23.11,
+      "fim": 24.14
+    },
+    {
+      "palavra": "a",
+      "inicio": 24.14,
+      "fim": 24.29
+    },
+    {
+      "palavra": "minha",
+      "inicio": 24.29,
+      "fim": 24.59
+    },
+    {
+      "palavra": "comunicação.",
+      "inicio": 24.59,
+      "fim": 25.68
+    },
+    {
+      "palavra": "Vamos",
+      "inicio": 25.68,
+      "fim": 25.98
+    },
+    {
+      "palavra": "nessa",
+      "inicio": 25.98,
+      "fim": 26.66
+    },
+    {
+      "palavra": "que",
+      "inicio": 26.66,
+      "fim": 26.8
+    },
+    {
+      "palavra": "estou",
+      "inicio": 26.8,
+      "fim": 27.42
+    },
+    {
+      "palavra": "apenas",
+      "inicio": 27.42,
+      "fim": 27.86
+    },
+    {
+      "palavra": "começando.",
+      "inicio": 27.86,
+      "fim": 28.45
+    },
+    {
+      "palavra": "E",
+      "inicio": 28.45,
+      "fim": 28.6
+    },
+    {
+      "palavra": "é",
+      "inicio": 28.6,
+      "fim": 29.09
+    },
+    {
+      "palavra": "isso,",
+      "inicio": 29.09,
+      "fim": 29.38
+    },
+    {
+      "palavra": "bora.",
+      "inicio": 29.38,
+      "fim": 29.68
+    }
+  ]
+}
