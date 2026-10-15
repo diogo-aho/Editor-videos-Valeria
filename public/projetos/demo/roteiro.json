@@ -6,8 +6,8 @@
   "duracao": 30.22,
   "orador": {
     "foco": "50% 28%",
-    "foto": "valeria/fotos/exemplo.jpg",
-    "fotoFrente": "valeria/fotos/exemplo-recorte.png"
+    "foto": "valeria/fotos/foto-3.jpg",
+    "fotoFrente": "valeria/fotos/foto-3-recorte.png"
   },
   "palavras": [
     {
@@ -501,8 +501,8 @@
       "inicio": 0,
       "fim": 6.5,
       "orador": {
-        "foto": "valeria/fotos/exemplo.jpg",
-        "fotoFrente": "valeria/fotos/exemplo-recorte.png",
+        "foto": "valeria/fotos/foto-3.jpg",
+        "fotoFrente": "valeria/fotos/foto-3-recorte.png",
         "foco": "50% 25%"
       },
       "zooms": [
@@ -525,8 +525,8 @@
         "rápido"
       ],
       "orador": {
-        "foto": "valeria/fotos/exemplo.jpg",
-        "fotoFrente": "valeria/fotos/exemplo-recorte.png",
+        "foto": "valeria/fotos/foto-3.jpg",
+        "fotoFrente": "valeria/fotos/foto-3-recorte.png",
         "foco": "50% 22%"
       }
     },
@@ -541,7 +541,7 @@
       "inicio": 13.25,
       "fim": 18.6,
       "orador": {
-        "foto": "valeria/fotos/exemplo.jpg",
+        "foto": "valeria/fotos/foto-3.jpg",
         "foco": "50% 22%"
       },
       "zooms": [
@@ -557,8 +557,8 @@
       "inicio": 18.6,
       "fim": 22.4,
       "orador": {
-        "foto": "valeria/fotos/exemplo.jpg",
-        "fotoFrente": "valeria/fotos/exemplo-recorte.png",
+        "foto": "valeria/fotos/foto-3.jpg",
+        "fotoFrente": "valeria/fotos/foto-3-recorte.png",
         "foco": "50% 22%"
       }
     },
@@ -567,8 +567,8 @@
       "inicio": 22.4,
       "fim": 25.6,
       "orador": {
-        "foto": "valeria/fotos/exemplo.jpg",
-        "fotoFrente": "valeria/fotos/exemplo-recorte.png",
+        "foto": "valeria/fotos/foto-3.jpg",
+        "fotoFrente": "valeria/fotos/foto-3-recorte.png",
         "foco": "50% 24%"
       }
     },
@@ -577,7 +577,7 @@
       "inicio": 25.6,
       "fim": 30.22,
       "orador": {
-        "foto": "valeria/fotos/exemplo.jpg",
+        "foto": "valeria/fotos/foto-3.jpg",
         "foco": "50% 22%"
       },
       "zooms": [
@@ -621,7 +621,7 @@
     "fim": 13.25
   },
   "capa": {
-    "foto": "valeria/fotos/exemplo.jpg",
+    "foto": "valeria/fotos/foto-3.jpg",
     "titulo": "Trabalhando a minha\ncomunicação.",
     "subtitulo": "Estou apenas começando.",
     "foco": "50% 25%"

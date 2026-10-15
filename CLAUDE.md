@@ -21,8 +21,9 @@ Para editar um vídeo, siga a skill **`editar-video`** (`.claude/skills/editar-v
 ## Quem é
 
 - **Nome nos vídeos:** Valeria Carinhato · **@valeriacarinhato** · assinatura pessoal (nome + @, sem logo).
-- **Fotos:** `public/valeria/fotos/` (recortes de silhueta: `foto-N-recorte.png`). Hoje só há uma foto
-  provisória (`exemplo.jpg`, uma silhueta desenhada) para o projeto de teste; trocar pelas fotos dela.
+- **Fotos:** `public/valeria/fotos/` (recortes de silhueta: `foto-N-recorte.png`). foto-1 = blazer bege, fundo
+  cinza (meio corpo); foto-2 = rosto bem de perto; foto-3 = blazer marrom, fundo de ripas de madeira.
+  São recortes de baixa resolução (até ~960 px): servem para capa pequena, cartões e assinatura, não para tela cheia.
 - **Quem é:** empresária, headhunter, mentora de líderes executivos e empresários.
 - **Temas:** autoconhecimento e autodesenvolvimento; liderança e carreira; comunidade **Eixoz**
   (5 eixos: Consciência, Saúde, Família, Propósito e Prosperidade). A identidade da Eixoz ainda está
